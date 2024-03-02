@@ -3,7 +3,6 @@
 
 -- Instances:
 
-local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabels = Instance.new("Folder")
 local ArcadeHavenRecircF = Instance.new("TextLabel")
@@ -65,13 +64,11 @@ local TextLabel_16 = Instance.new("TextLabel")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
-Frame.Parent = ScreenGui
+Frame.Parent = game.StarterGui.ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(59, 60, 62)
 Frame.BorderColor3 = Color3.fromRGB(216, 209, 0)
 Frame.BorderSizePixel = 9
-Frame.Position = UDim2.new(0.21327433, 0, 0.301324517, 0)
+Frame.Position = UDim2.new(0.0387053639, 0, 0.0493735634, 0)
 Frame.Size = UDim2.new(0, 648, 0, 373)
 
 TextLabels.Name = "Text Labels"
@@ -784,7 +781,7 @@ TextLabel_16.TextStrokeTransparency = 0.000
 
 -- Scripts:
 
-local function OHAHRWD_fake_script() -- _24123795.LocalScript 
+local function GACFN_fake_script() -- _24123795.LocalScript 
 	local script = Instance.new('LocalScript', _24123795)
 
 	local itemString = script.Parent.Name
@@ -795,8 +792,8 @@ local function OHAHRWD_fake_script() -- _24123795.LocalScript
 	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
 end
-coroutine.wrap(OHAHRWD_fake_script)()
-local function SIXJJLY_fake_script() -- _23705521.LocalScript 
+coroutine.wrap(GACFN_fake_script)()
+local function TNTW_fake_script() -- _23705521.LocalScript 
 	local script = Instance.new('LocalScript', _23705521)
 
 	local itemString = script.Parent.Name
@@ -807,8 +804,8 @@ local function SIXJJLY_fake_script() -- _23705521.LocalScript
 	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
 end
-coroutine.wrap(SIXJJLY_fake_script)()
-local function OXEL_fake_script() -- _63043890.LocalScript 
+coroutine.wrap(TNTW_fake_script)()
+local function VAIPI_fake_script() -- _63043890.LocalScript 
 	local script = Instance.new('LocalScript', _63043890)
 
 	local itemString = script.Parent.Name
@@ -819,8 +816,8 @@ local function OXEL_fake_script() -- _63043890.LocalScript
 	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
 end
-coroutine.wrap(OXEL_fake_script)()
-local function UCGNPY_fake_script() -- _22546563.LocalScript 
+coroutine.wrap(VAIPI_fake_script)()
+local function GKGHTQH_fake_script() -- _22546563.LocalScript 
 	local script = Instance.new('LocalScript', _22546563)
 
 	local itemString = script.Parent.Name
@@ -831,8 +828,8 @@ local function UCGNPY_fake_script() -- _22546563.LocalScript
 	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
 end
-coroutine.wrap(UCGNPY_fake_script)()
-local function VBNEDMB_fake_script() -- _382881237.LocalScript 
+coroutine.wrap(GKGHTQH_fake_script)()
+local function MRUQAAK_fake_script() -- _382881237.LocalScript 
 	local script = Instance.new('LocalScript', _382881237)
 
 	local itemString = script.Parent.Name
@@ -843,8 +840,8 @@ local function VBNEDMB_fake_script() -- _382881237.LocalScript
 	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
 end
-coroutine.wrap(VBNEDMB_fake_script)()
-local function YFMC_fake_script() -- _188003914.LocalScript 
+coroutine.wrap(MRUQAAK_fake_script)()
+local function JIOAZHP_fake_script() -- _188003914.LocalScript 
 	local script = Instance.new('LocalScript', _188003914)
 
 	local itemString = script.Parent.Name
@@ -855,8 +852,8 @@ local function YFMC_fake_script() -- _188003914.LocalScript
 	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
 end
-coroutine.wrap(YFMC_fake_script)()
-local function CSFF_fake_script() -- _12908119.LocalScript 
+coroutine.wrap(JIOAZHP_fake_script)()
+local function OLYT_fake_script() -- _12908119.LocalScript 
 	local script = Instance.new('LocalScript', _12908119)
 
 	local itemString = script.Parent.Name
@@ -867,8 +864,8 @@ local function CSFF_fake_script() -- _12908119.LocalScript
 	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
 end
-coroutine.wrap(CSFF_fake_script)()
-local function BWSWN_fake_script() -- _146134358.LocalScript 
+coroutine.wrap(OLYT_fake_script)()
+local function WMOPWI_fake_script() -- _146134358.LocalScript 
 	local script = Instance.new('LocalScript', _146134358)
 
 	local itemString = script.Parent.Name
@@ -879,8 +876,8 @@ local function BWSWN_fake_script() -- _146134358.LocalScript
 	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
 end
-coroutine.wrap(BWSWN_fake_script)()
-local function ERILIT_fake_script() -- _17449820.LocalScript 
+coroutine.wrap(WMOPWI_fake_script)()
+local function GRKK_fake_script() -- _17449820.LocalScript 
 	local script = Instance.new('LocalScript', _17449820)
 
 	local itemString = script.Parent.Name
@@ -891,8 +888,8 @@ local function ERILIT_fake_script() -- _17449820.LocalScript
 	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
 end
-coroutine.wrap(ERILIT_fake_script)()
-local function JRZVTZU_fake_script() -- _439984665.LocalScript 
+coroutine.wrap(GRKK_fake_script)()
+local function LJFDDM_fake_script() -- _439984665.LocalScript 
 	local script = Instance.new('LocalScript', _439984665)
 
 	local itemString = script.Parent.Name
@@ -903,8 +900,8 @@ local function JRZVTZU_fake_script() -- _439984665.LocalScript
 	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
 end
-coroutine.wrap(JRZVTZU_fake_script)()
-local function FULUZGV_fake_script() -- _215719463.LocalScript 
+coroutine.wrap(LJFDDM_fake_script)()
+local function MOSKNDY_fake_script() -- _215719463.LocalScript 
 	local script = Instance.new('LocalScript', _215719463)
 
 	local itemString = script.Parent.Name
@@ -915,8 +912,8 @@ local function FULUZGV_fake_script() -- _215719463.LocalScript
 	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
 end
-coroutine.wrap(FULUZGV_fake_script)()
-local function BPYH_fake_script() -- _138932314.LocalScript 
+coroutine.wrap(MOSKNDY_fake_script)()
+local function IHNI_fake_script() -- _138932314.LocalScript 
 	local script = Instance.new('LocalScript', _138932314)
 
 	local itemString = script.Parent.Name
@@ -927,8 +924,8 @@ local function BPYH_fake_script() -- _138932314.LocalScript
 	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
 end
-coroutine.wrap(BPYH_fake_script)()
-local function XKEKHG_fake_script() -- _1114768.LocalScript 
+coroutine.wrap(IHNI_fake_script)()
+local function VPBCSD_fake_script() -- _1114768.LocalScript 
 	local script = Instance.new('LocalScript', _1114768)
 
 	local itemString = script.Parent.Name
@@ -939,8 +936,8 @@ local function XKEKHG_fake_script() -- _1114768.LocalScript
 	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
 end
-coroutine.wrap(XKEKHG_fake_script)()
-local function ZIECER_fake_script() -- _183468963.LocalScript 
+coroutine.wrap(VPBCSD_fake_script)()
+local function AFNS_fake_script() -- _183468963.LocalScript 
 	local script = Instance.new('LocalScript', _183468963)
 
 	local itemString = script.Parent.Name
@@ -951,8 +948,8 @@ local function ZIECER_fake_script() -- _183468963.LocalScript
 	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
 end
-coroutine.wrap(ZIECER_fake_script)()
-local function ZYMGL_fake_script() -- _13702160.LocalScript 
+coroutine.wrap(AFNS_fake_script)()
+local function OIYTHU_fake_script() -- _13702160.LocalScript 
 	local script = Instance.new('LocalScript', _13702160)
 
 	local itemString = script.Parent.Name
@@ -963,8 +960,8 @@ local function ZYMGL_fake_script() -- _13702160.LocalScript
 	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
 end
-coroutine.wrap(ZYMGL_fake_script)()
-local function NWZF_fake_script() -- _162067148.LocalScript 
+coroutine.wrap(OIYTHU_fake_script)()
+local function AWXFS_fake_script() -- _162067148.LocalScript 
 	local script = Instance.new('LocalScript', _162067148)
 
 	local itemString = script.Parent.Name
@@ -975,4 +972,4 @@ local function NWZF_fake_script() -- _162067148.LocalScript
 	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
 end
-coroutine.wrap(NWZF_fake_script)()
+coroutine.wrap(AWXFS_fake_script)()
