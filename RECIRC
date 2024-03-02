@@ -866,219 +866,273 @@ TextLabel_18.TextStrokeTransparency = 0.000
 
 -- Scripts:
 
-local function SIKYH_fake_script() -- _24123795.LocalScript 
+local function HMFUBTQ_fake_script() -- _24123795.LocalScript 
 	local script = Instance.new('LocalScript', _24123795)
 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
 	local itemString = script.Parent.Name
 	local item = tonumber(itemString)
 	local args = {
 		[1] = item
 	}
-	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+	end)
 end
-coroutine.wrap(SIKYH_fake_script)()
-local function YCRQV_fake_script() -- _23705521.LocalScript 
+coroutine.wrap(HMFUBTQ_fake_script)()
+local function ZQPSVR_fake_script() -- _23705521.LocalScript 
 	local script = Instance.new('LocalScript', _23705521)
 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
 	local itemString = script.Parent.Name
 	local item = tonumber(itemString)
 	local args = {
 		[1] = item
 	}
-	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+	end)
 end
-coroutine.wrap(YCRQV_fake_script)()
-local function NHEHI_fake_script() -- _63043890.LocalScript 
+coroutine.wrap(ZQPSVR_fake_script)()
+local function CJEA_fake_script() -- _63043890.LocalScript 
 	local script = Instance.new('LocalScript', _63043890)
 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
 	local itemString = script.Parent.Name
 	local item = tonumber(itemString)
 	local args = {
 		[1] = item
 	}
-	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+	end)
 end
-coroutine.wrap(NHEHI_fake_script)()
-local function CYSHY_fake_script() -- _22546563.LocalScript 
+coroutine.wrap(CJEA_fake_script)()
+local function QEHER_fake_script() -- _22546563.LocalScript 
 	local script = Instance.new('LocalScript', _22546563)
 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
 	local itemString = script.Parent.Name
 	local item = tonumber(itemString)
 	local args = {
 		[1] = item
 	}
-	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+	end)
 end
-coroutine.wrap(CYSHY_fake_script)()
-local function ABGGSOA_fake_script() -- _382881237.LocalScript 
+coroutine.wrap(QEHER_fake_script)()
+local function JKJNUG_fake_script() -- _382881237.LocalScript 
 	local script = Instance.new('LocalScript', _382881237)
 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
 	local itemString = script.Parent.Name
 	local item = tonumber(itemString)
 	local args = {
 		[1] = item
 	}
-	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+	end)
 end
-coroutine.wrap(ABGGSOA_fake_script)()
-local function LACRW_fake_script() -- _188003914.LocalScript 
+coroutine.wrap(JKJNUG_fake_script)()
+local function GUFJZ_fake_script() -- _188003914.LocalScript 
 	local script = Instance.new('LocalScript', _188003914)
 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
 	local itemString = script.Parent.Name
 	local item = tonumber(itemString)
 	local args = {
 		[1] = item
 	}
-	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+	end)
 end
-coroutine.wrap(LACRW_fake_script)()
-local function EDMSA_fake_script() -- _12908119.LocalScript 
+coroutine.wrap(GUFJZ_fake_script)()
+local function QRUYI_fake_script() -- _12908119.LocalScript 
 	local script = Instance.new('LocalScript', _12908119)
 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
 	local itemString = script.Parent.Name
 	local item = tonumber(itemString)
 	local args = {
 		[1] = item
 	}
-	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+	end)
 end
-coroutine.wrap(EDMSA_fake_script)()
-local function JGBRI_fake_script() -- _146134358.LocalScript 
+coroutine.wrap(QRUYI_fake_script)()
+local function BMRCYPV_fake_script() -- _146134358.LocalScript 
 	local script = Instance.new('LocalScript', _146134358)
 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
 	local itemString = script.Parent.Name
 	local item = tonumber(itemString)
 	local args = {
 		[1] = item
 	}
-	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+	end)
 end
-coroutine.wrap(JGBRI_fake_script)()
-local function SEPWWSG_fake_script() -- _17449820.LocalScript 
+coroutine.wrap(BMRCYPV_fake_script)()
+local function HPPY_fake_script() -- _17449820.LocalScript 
 	local script = Instance.new('LocalScript', _17449820)
 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
 	local itemString = script.Parent.Name
 	local item = tonumber(itemString)
 	local args = {
 		[1] = item
 	}
-	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+	end)
 end
-coroutine.wrap(SEPWWSG_fake_script)()
-local function OGQD_fake_script() -- _439984665.LocalScript 
+coroutine.wrap(HPPY_fake_script)()
+local function ZRBHXQ_fake_script() -- _439984665.LocalScript 
 	local script = Instance.new('LocalScript', _439984665)
 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
 	local itemString = script.Parent.Name
 	local item = tonumber(itemString)
 	local args = {
 		[1] = item
 	}
-	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+	end)
 end
-coroutine.wrap(OGQD_fake_script)()
-local function HDXIFG_fake_script() -- _215719463.LocalScript 
+coroutine.wrap(ZRBHXQ_fake_script)()
+local function FQSFBI_fake_script() -- _215719463.LocalScript 
 	local script = Instance.new('LocalScript', _215719463)
 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
 	local itemString = script.Parent.Name
 	local item = tonumber(itemString)
 	local args = {
 		[1] = item
 	}
-	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+	end)
 end
-coroutine.wrap(HDXIFG_fake_script)()
-local function ZYLCF_fake_script() -- _138932314.LocalScript 
+coroutine.wrap(FQSFBI_fake_script)()
+local function KOES_fake_script() -- _138932314.LocalScript 
 	local script = Instance.new('LocalScript', _138932314)
 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
 	local itemString = script.Parent.Name
 	local item = tonumber(itemString)
 	local args = {
 		[1] = item
 	}
-	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+	end)
 end
-coroutine.wrap(ZYLCF_fake_script)()
-local function VGQSAF_fake_script() -- _1114768.LocalScript 
+coroutine.wrap(KOES_fake_script)()
+local function GNZP_fake_script() -- _1114768.LocalScript 
 	local script = Instance.new('LocalScript', _1114768)
 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
 	local itemString = script.Parent.Name
 	local item = tonumber(itemString)
 	local args = {
 		[1] = item
 	}
-	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+	end)
 end
-coroutine.wrap(VGQSAF_fake_script)()
-local function FUGVGDC_fake_script() -- _183468963.LocalScript 
+coroutine.wrap(GNZP_fake_script)()
+local function LEPOS_fake_script() -- _183468963.LocalScript 
 	local script = Instance.new('LocalScript', _183468963)
 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
 	local itemString = script.Parent.Name
 	local item = tonumber(itemString)
 	local args = {
 		[1] = item
 	}
-	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+	end)
 end
-coroutine.wrap(FUGVGDC_fake_script)()
-local function VJQAJQ_fake_script() -- _13702160.LocalScript 
+coroutine.wrap(LEPOS_fake_script)()
+local function ZNTLQ_fake_script() -- _13702160.LocalScript 
 	local script = Instance.new('LocalScript', _13702160)
 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
 	local itemString = script.Parent.Name
 	local item = tonumber(itemString)
 	local args = {
 		[1] = item
 	}
-	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+	end)
 end
-coroutine.wrap(VJQAJQ_fake_script)()
-local function CMJDUM_fake_script() -- _162067148.LocalScript 
+coroutine.wrap(ZNTLQ_fake_script)()
+local function VCCVSAR_fake_script() -- _162067148.LocalScript 
 	local script = Instance.new('LocalScript', _162067148)
 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
 	local itemString = script.Parent.Name
 	local item = tonumber(itemString)
 	local args = {
 		[1] = item
 	}
-	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+	end)
 end
-coroutine.wrap(CMJDUM_fake_script)()
-local function TUGJZYH_fake_script() -- _24123795_2.LocalScript 
+coroutine.wrap(VCCVSAR_fake_script)()
+local function UDBQP_fake_script() -- _24123795_2.LocalScript 
 	local script = Instance.new('LocalScript', _24123795_2)
 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
 	local itemString = script.Parent.Name
 	local item = tonumber(itemString)
 	local args = {
 		[1] = item
 	}
-	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+	end)
 end
-coroutine.wrap(TUGJZYH_fake_script)()
-local function YYKB_fake_script() -- _102611668.LocalScript 
+coroutine.wrap(UDBQP_fake_script)()
+local function SGRXR_fake_script() -- _102611668.LocalScript 
 	local script = Instance.new('LocalScript', _102611668)
 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
 	local itemString = script.Parent.Name
 	local item = tonumber(itemString)
 	local args = {
 		[1] = item
 	}
-	
 	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+	end)
 end
-coroutine.wrap(YYKB_fake_script)()
+coroutine.wrap(SGRXR_fake_script)()
