@@ -1,0 +1,978 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabels = Instance.new("Folder")
+local ArcadeHavenRecircF = Instance.new("TextLabel")
+local _25mitems = Instance.new("TextLabel")
+local _50mitems = Instance.new("TextLabel")
+local _100mitems = Instance.new("TextLabel")
+local _10mitems = Instance.new("TextLabel")
+local Shine = Instance.new("Folder")
+local Frame_2 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local _24123795 = Instance.new("TextButton")
+local Roundify = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local _23705521 = Instance.new("TextButton")
+local Roundify_2 = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local _63043890 = Instance.new("TextButton")
+local Roundify_3 = Instance.new("ImageLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local _22546563 = Instance.new("TextButton")
+local Roundify_4 = Instance.new("ImageLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local _382881237 = Instance.new("TextButton")
+local Roundify_5 = Instance.new("ImageLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local _188003914 = Instance.new("TextButton")
+local Roundify_6 = Instance.new("ImageLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local _12908119 = Instance.new("TextButton")
+local Roundify_7 = Instance.new("ImageLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local _146134358 = Instance.new("TextButton")
+local Roundify_8 = Instance.new("ImageLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local _17449820 = Instance.new("TextButton")
+local Roundify_9 = Instance.new("ImageLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local _439984665 = Instance.new("TextButton")
+local Roundify_10 = Instance.new("ImageLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local _215719463 = Instance.new("TextButton")
+local Roundify_11 = Instance.new("ImageLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local _138932314 = Instance.new("TextButton")
+local Roundify_12 = Instance.new("ImageLabel")
+local TextLabel_12 = Instance.new("TextLabel")
+local _1114768 = Instance.new("TextButton")
+local Roundify_13 = Instance.new("ImageLabel")
+local TextLabel_13 = Instance.new("TextLabel")
+local _183468963 = Instance.new("TextButton")
+local Roundify_14 = Instance.new("ImageLabel")
+local TextLabel_14 = Instance.new("TextLabel")
+local _13702160 = Instance.new("TextButton")
+local Roundify_15 = Instance.new("ImageLabel")
+local TextLabel_15 = Instance.new("TextLabel")
+local _162067148 = Instance.new("TextButton")
+local Roundify_16 = Instance.new("ImageLabel")
+local TextLabel_16 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(59, 60, 62)
+Frame.BorderColor3 = Color3.fromRGB(216, 209, 0)
+Frame.BorderSizePixel = 9
+Frame.Position = UDim2.new(0.21327433, 0, 0.301324517, 0)
+Frame.Size = UDim2.new(0, 648, 0, 373)
+
+TextLabels.Name = "Text Labels"
+TextLabels.Parent = Frame
+
+ArcadeHavenRecircF.Name = "ArcadeHavenRecircF"
+ArcadeHavenRecircF.Parent = TextLabels
+ArcadeHavenRecircF.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ArcadeHavenRecircF.BackgroundTransparency = 1.000
+ArcadeHavenRecircF.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ArcadeHavenRecircF.BorderSizePixel = 0
+ArcadeHavenRecircF.Position = UDim2.new(0.100308642, 0, 0.0268096514, 0)
+ArcadeHavenRecircF.Size = UDim2.new(0, 518, 0, 50)
+ArcadeHavenRecircF.Font = Enum.Font.GothamBold
+ArcadeHavenRecircF.Text = "Arcade Haven Recirculation Fucker"
+ArcadeHavenRecircF.TextColor3 = Color3.fromRGB(59, 60, 62)
+ArcadeHavenRecircF.TextSize = 28.000
+ArcadeHavenRecircF.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+ArcadeHavenRecircF.TextStrokeTransparency = 0.000
+ArcadeHavenRecircF.TextWrapped = true
+
+_25mitems.Name = "25mitems"
+_25mitems.Parent = TextLabels
+_25mitems.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_25mitems.BackgroundTransparency = 1.000
+_25mitems.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_25mitems.BorderSizePixel = 0
+_25mitems.Position = UDim2.new(0.430555552, 0, 0.160857916, 0)
+_25mitems.Size = UDim2.new(0, 200, 0, 50)
+_25mitems.Font = Enum.Font.SourceSansBold
+_25mitems.Text = "25M+ Items"
+_25mitems.TextColor3 = Color3.fromRGB(59, 60, 62)
+_25mitems.TextSize = 17.000
+_25mitems.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+_25mitems.TextStrokeTransparency = 0.460
+
+_50mitems.Name = "50mitems"
+_50mitems.Parent = TextLabels
+_50mitems.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_50mitems.BackgroundTransparency = 1.000
+_50mitems.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_50mitems.BorderSizePixel = 0
+_50mitems.Position = UDim2.new(0.222222224, 0, 0.158176944, 0)
+_50mitems.Size = UDim2.new(0, 200, 0, 50)
+_50mitems.Font = Enum.Font.SourceSansBold
+_50mitems.Text = "50M+ Items"
+_50mitems.TextColor3 = Color3.fromRGB(59, 60, 62)
+_50mitems.TextSize = 17.000
+_50mitems.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+_50mitems.TextStrokeTransparency = 0.460
+
+_100mitems.Name = "100mitems"
+_100mitems.Parent = TextLabels
+_100mitems.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_100mitems.BackgroundTransparency = 1.000
+_100mitems.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_100mitems.BorderSizePixel = 0
+_100mitems.Position = UDim2.new(0.0185185187, 0, 0.158176944, 0)
+_100mitems.Size = UDim2.new(0, 200, 0, 50)
+_100mitems.Font = Enum.Font.SourceSansBold
+_100mitems.Text = "100M+ Items"
+_100mitems.TextColor3 = Color3.fromRGB(59, 60, 62)
+_100mitems.TextSize = 17.000
+_100mitems.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+_100mitems.TextStrokeTransparency = 0.460
+
+_10mitems.Name = "10mitems"
+_10mitems.Parent = TextLabels
+_10mitems.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_10mitems.BackgroundTransparency = 1.000
+_10mitems.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_10mitems.BorderSizePixel = 0
+_10mitems.Position = UDim2.new(0.643518507, 0, 0.160857916, 0)
+_10mitems.Size = UDim2.new(0, 200, 0, 50)
+_10mitems.Font = Enum.Font.SourceSansBold
+_10mitems.Text = "10M+ Items"
+_10mitems.TextColor3 = Color3.fromRGB(59, 60, 62)
+_10mitems.TextSize = 17.000
+_10mitems.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+_10mitems.TextStrokeTransparency = 0.460
+
+Shine.Name = "Shine"
+Shine.Parent = Frame
+
+Frame_2.Parent = Shine
+Frame_2.BackgroundColor3 = Color3.fromRGB(206, 206, 19)
+Frame_2.BackgroundTransparency = 0.700
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.13882041, 0, -0.0447040796, 0)
+Frame_2.Rotation = -15.000
+Frame_2.Size = UDim2.new(0, 46, 0, 406)
+
+Frame_3.Parent = Shine
+Frame_3.BackgroundColor3 = Color3.fromRGB(206, 206, 19)
+Frame_3.BackgroundTransparency = 0.700
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.290544152, 0, -0.0344577394, 0)
+Frame_3.Rotation = -15.000
+Frame_3.Size = UDim2.new(0, 46, 0, 401)
+
+_24123795.Name = "24123795"
+_24123795.Parent = Frame
+_24123795.BackgroundColor3 = Color3.fromRGB(51, 53, 54)
+_24123795.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_24123795.BorderSizePixel = 0
+_24123795.Position = UDim2.new(0.740740716, 0, 0.294906169, 0)
+_24123795.Size = UDim2.new(0, 73, 0, 20)
+_24123795.Font = Enum.Font.SourceSans
+_24123795.TextColor3 = Color3.fromRGB(0, 0, 0)
+_24123795.TextSize = 14.000
+
+Roundify.Name = "Roundify"
+Roundify.Parent = _24123795
+Roundify.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify.BackgroundTransparency = 1.000
+Roundify.Position = UDim2.new(0.5, 0, 0.5, 0)
+Roundify.Size = UDim2.new(1, 12, 1, 12)
+Roundify.Image = "rbxassetid://3570695787"
+Roundify.ImageColor3 = Color3.fromRGB(51, 53, 54)
+Roundify.ScaleType = Enum.ScaleType.Slice
+Roundify.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify.SliceScale = 0.120
+
+TextLabel.Parent = _24123795
+TextLabel.BackgroundColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.0821917802, 0, -0.300000012, 0)
+TextLabel.Size = UDim2.new(0, 85, 0, 31)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Al Capwn"
+TextLabel.TextColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel.TextStrokeTransparency = 0.000
+
+_23705521.Name = "23705521"
+_23705521.Parent = Frame
+_23705521.BackgroundColor3 = Color3.fromRGB(51, 53, 54)
+_23705521.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_23705521.BorderSizePixel = 0
+_23705521.Position = UDim2.new(0.740740716, 0, 0.407506704, 0)
+_23705521.Size = UDim2.new(0, 73, 0, 20)
+_23705521.Font = Enum.Font.SourceSans
+_23705521.TextColor3 = Color3.fromRGB(0, 0, 0)
+_23705521.TextSize = 14.000
+
+Roundify_2.Name = "Roundify"
+Roundify_2.Parent = _23705521
+Roundify_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_2.BackgroundTransparency = 1.000
+Roundify_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Roundify_2.Size = UDim2.new(1, 12, 1, 12)
+Roundify_2.Image = "rbxassetid://3570695787"
+Roundify_2.ImageColor3 = Color3.fromRGB(51, 53, 54)
+Roundify_2.ScaleType = Enum.ScaleType.Slice
+Roundify_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_2.SliceScale = 0.120
+
+TextLabel_2.Parent = _23705521
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(-0.0821917802, 0, -0.300000012, 0)
+TextLabel_2.Size = UDim2.new(0, 85, 0, 31)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "Euro 180"
+TextLabel_2.TextColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_2.TextStrokeTransparency = 0.000
+
+_63043890.Name = "63043890"
+_63043890.Parent = Frame
+_63043890.BackgroundColor3 = Color3.fromRGB(51, 53, 54)
+_63043890.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_63043890.BorderSizePixel = 0
+_63043890.Position = UDim2.new(0.740740716, 0, 0.525469184, 0)
+_63043890.Size = UDim2.new(0, 73, 0, 20)
+_63043890.Font = Enum.Font.SourceSans
+_63043890.TextColor3 = Color3.fromRGB(0, 0, 0)
+_63043890.TextSize = 14.000
+
+Roundify_3.Name = "Roundify"
+Roundify_3.Parent = _63043890
+Roundify_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_3.BackgroundTransparency = 1.000
+Roundify_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+Roundify_3.Size = UDim2.new(1, 12, 1, 12)
+Roundify_3.Image = "rbxassetid://3570695787"
+Roundify_3.ImageColor3 = Color3.fromRGB(51, 53, 54)
+Roundify_3.ScaleType = Enum.ScaleType.Slice
+Roundify_3.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_3.SliceScale = 0.120
+
+TextLabel_3.Parent = _63043890
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(-0.0821917802, 0, -0.300000012, 0)
+TextLabel_3.Size = UDim2.new(0, 85, 0, 31)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "Purple STF"
+TextLabel_3.TextColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_3.TextStrokeTransparency = 0.000
+
+_22546563.Name = "22546563"
+_22546563.Parent = Frame
+_22546563.BackgroundColor3 = Color3.fromRGB(51, 53, 54)
+_22546563.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_22546563.BorderSizePixel = 0
+_22546563.Position = UDim2.new(0.740740716, 0, 0.646112621, 0)
+_22546563.Size = UDim2.new(0, 73, 0, 20)
+_22546563.Font = Enum.Font.SourceSans
+_22546563.TextColor3 = Color3.fromRGB(0, 0, 0)
+_22546563.TextSize = 14.000
+
+Roundify_4.Name = "Roundify"
+Roundify_4.Parent = _22546563
+Roundify_4.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_4.BackgroundTransparency = 1.000
+Roundify_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+Roundify_4.Size = UDim2.new(1, 12, 1, 12)
+Roundify_4.Image = "rbxassetid://3570695787"
+Roundify_4.ImageColor3 = Color3.fromRGB(51, 53, 54)
+Roundify_4.ScaleType = Enum.ScaleType.Slice
+Roundify_4.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_4.SliceScale = 0.120
+
+TextLabel_4.Parent = _22546563
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(-0.0821917802, 0, -0.300000012, 0)
+TextLabel_4.Size = UDim2.new(0, 85, 0, 31)
+TextLabel_4.Font = Enum.Font.SourceSansBold
+TextLabel_4.Text = "Gold Ollie"
+TextLabel_4.TextColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_4.TextStrokeTransparency = 0.000
+
+_382881237.Name = "382881237"
+_382881237.Parent = Frame
+_382881237.BackgroundColor3 = Color3.fromRGB(51, 53, 54)
+_382881237.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_382881237.BorderSizePixel = 0
+_382881237.Position = UDim2.new(0.740740716, 0, 0.77479893, 0)
+_382881237.Size = UDim2.new(0, 73, 0, 20)
+_382881237.Font = Enum.Font.SourceSans
+_382881237.TextColor3 = Color3.fromRGB(0, 0, 0)
+_382881237.TextSize = 14.000
+
+Roundify_5.Name = "Roundify"
+Roundify_5.Parent = _382881237
+Roundify_5.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_5.BackgroundTransparency = 1.000
+Roundify_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+Roundify_5.Size = UDim2.new(1, 12, 1, 12)
+Roundify_5.Image = "rbxassetid://3570695787"
+Roundify_5.ImageColor3 = Color3.fromRGB(51, 53, 54)
+Roundify_5.ScaleType = Enum.ScaleType.Slice
+Roundify_5.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_5.SliceScale = 0.120
+
+TextLabel_5.Parent = _382881237
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(-0.0821917802, 0, -0.300000012, 0)
+TextLabel_5.Size = UDim2.new(0, 85, 0, 31)
+TextLabel_5.Font = Enum.Font.SourceSansBold
+TextLabel_5.Text = "Tix Valk"
+TextLabel_5.TextColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_5.TextStrokeTransparency = 0.000
+
+_188003914.Name = "188003914"
+_188003914.Parent = Frame
+_188003914.BackgroundColor3 = Color3.fromRGB(51, 53, 54)
+_188003914.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_188003914.BorderSizePixel = 0
+_188003914.Position = UDim2.new(0.740740716, 0, 0.890080452, 0)
+_188003914.Size = UDim2.new(0, 73, 0, 20)
+_188003914.Font = Enum.Font.SourceSans
+_188003914.TextColor3 = Color3.fromRGB(0, 0, 0)
+_188003914.TextSize = 14.000
+
+Roundify_6.Name = "Roundify"
+Roundify_6.Parent = _188003914
+Roundify_6.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_6.BackgroundTransparency = 1.000
+Roundify_6.Position = UDim2.new(0.5, 0, 0.5, 0)
+Roundify_6.Size = UDim2.new(1, 12, 1, 12)
+Roundify_6.Image = "rbxassetid://3570695787"
+Roundify_6.ImageColor3 = Color3.fromRGB(51, 53, 54)
+Roundify_6.ScaleType = Enum.ScaleType.Slice
+Roundify_6.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_6.SliceScale = 0.120
+
+TextLabel_6.Parent = _188003914
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(-0.0821917802, 0, -0.300000012, 0)
+TextLabel_6.Size = UDim2.new(0, 85, 0, 31)
+TextLabel_6.Font = Enum.Font.SourceSansBold
+TextLabel_6.Text = "Countess"
+TextLabel_6.TextColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_6.TextStrokeTransparency = 0.000
+
+_12908119.Name = "12908119"
+_12908119.Parent = Frame
+_12908119.BackgroundColor3 = Color3.fromRGB(51, 53, 54)
+_12908119.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_12908119.BorderSizePixel = 0
+_12908119.Position = UDim2.new(0.527777791, 0, 0.294906169, 0)
+_12908119.Size = UDim2.new(0, 73, 0, 20)
+_12908119.Font = Enum.Font.SourceSans
+_12908119.TextColor3 = Color3.fromRGB(0, 0, 0)
+_12908119.TextSize = 14.000
+
+Roundify_7.Name = "Roundify"
+Roundify_7.Parent = _12908119
+Roundify_7.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_7.BackgroundTransparency = 1.000
+Roundify_7.Position = UDim2.new(0.5, 0, 0.5, 0)
+Roundify_7.Size = UDim2.new(1, 12, 1, 12)
+Roundify_7.Image = "rbxassetid://3570695787"
+Roundify_7.ImageColor3 = Color3.fromRGB(51, 53, 54)
+Roundify_7.ScaleType = Enum.ScaleType.Slice
+Roundify_7.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_7.SliceScale = 0.120
+
+TextLabel_7.Parent = _12908119
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(-0.0821917802, 0, -0.300000012, 0)
+TextLabel_7.Size = UDim2.new(0, 85, 0, 31)
+TextLabel_7.Font = Enum.Font.SourceSansBold
+TextLabel_7.Text = "Steampunk"
+TextLabel_7.TextColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_7.TextStrokeTransparency = 0.000
+
+_146134358.Name = "146134358"
+_146134358.Parent = Frame
+_146134358.BackgroundColor3 = Color3.fromRGB(51, 53, 54)
+_146134358.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_146134358.BorderSizePixel = 0
+_146134358.Position = UDim2.new(0.527777791, 0, 0.407506704, 0)
+_146134358.Size = UDim2.new(0, 73, 0, 20)
+_146134358.Font = Enum.Font.SourceSans
+_146134358.TextColor3 = Color3.fromRGB(0, 0, 0)
+_146134358.TextSize = 14.000
+
+Roundify_8.Name = "Roundify"
+Roundify_8.Parent = _146134358
+Roundify_8.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_8.BackgroundTransparency = 1.000
+Roundify_8.Position = UDim2.new(0.5, 0, 0.5, 0)
+Roundify_8.Size = UDim2.new(1, 12, 1, 12)
+Roundify_8.Image = "rbxassetid://3570695787"
+Roundify_8.ImageColor3 = Color3.fromRGB(51, 53, 54)
+Roundify_8.ScaleType = Enum.ScaleType.Slice
+Roundify_8.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_8.SliceScale = 0.120
+
+TextLabel_8.Parent = _146134358
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(-0.0821917802, 0, -0.300000012, 0)
+TextLabel_8.Size = UDim2.new(0, 85, 0, 31)
+TextLabel_8.Font = Enum.Font.SourceSansBold
+TextLabel_8.Text = "Earl of Fed"
+TextLabel_8.TextColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_8.TextStrokeTransparency = 0.000
+
+_17449820.Name = "17449820"
+_17449820.Parent = Frame
+_17449820.BackgroundColor3 = Color3.fromRGB(51, 53, 54)
+_17449820.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_17449820.BorderSizePixel = 0
+_17449820.Position = UDim2.new(0.527777791, 0, 0.525469184, 0)
+_17449820.Size = UDim2.new(0, 73, 0, 20)
+_17449820.Font = Enum.Font.SourceSans
+_17449820.TextColor3 = Color3.fromRGB(0, 0, 0)
+_17449820.TextSize = 14.000
+
+Roundify_9.Name = "Roundify"
+Roundify_9.Parent = _17449820
+Roundify_9.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_9.BackgroundTransparency = 1.000
+Roundify_9.Position = UDim2.new(0.5, 0, 0.5, 0)
+Roundify_9.Size = UDim2.new(1, 12, 1, 12)
+Roundify_9.Image = "rbxassetid://3570695787"
+Roundify_9.ImageColor3 = Color3.fromRGB(51, 53, 54)
+Roundify_9.ScaleType = Enum.ScaleType.Slice
+Roundify_9.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_9.SliceScale = 0.120
+
+TextLabel_9.Parent = _17449820
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(-0.0821917802, 0, -0.300000012, 0)
+TextLabel_9.Size = UDim2.new(0, 85, 0, 31)
+TextLabel_9.Font = Enum.Font.SourceSansBold
+TextLabel_9.Text = "Crown of Roses"
+TextLabel_9.TextColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_9.TextStrokeTransparency = 0.000
+
+_439984665.Name = "439984665"
+_439984665.Parent = Frame
+_439984665.BackgroundColor3 = Color3.fromRGB(51, 53, 54)
+_439984665.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_439984665.BorderSizePixel = 0
+_439984665.Position = UDim2.new(0.527777791, 0, 0.646112621, 0)
+_439984665.Size = UDim2.new(0, 73, 0, 20)
+_439984665.Font = Enum.Font.SourceSans
+_439984665.TextColor3 = Color3.fromRGB(0, 0, 0)
+_439984665.TextSize = 14.000
+
+Roundify_10.Name = "Roundify"
+Roundify_10.Parent = _439984665
+Roundify_10.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_10.BackgroundTransparency = 1.000
+Roundify_10.Position = UDim2.new(0.5, 0, 0.5, 0)
+Roundify_10.Size = UDim2.new(1, 12, 1, 12)
+Roundify_10.Image = "rbxassetid://3570695787"
+Roundify_10.ImageColor3 = Color3.fromRGB(51, 53, 54)
+Roundify_10.ScaleType = Enum.ScaleType.Slice
+Roundify_10.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_10.SliceScale = 0.120
+
+TextLabel_10.Parent = _439984665
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.BorderColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(-0.0821917802, 0, -0.300000012, 0)
+TextLabel_10.Size = UDim2.new(0, 85, 0, 31)
+TextLabel_10.Font = Enum.Font.SourceSansBold
+TextLabel_10.Text = "Duchess"
+TextLabel_10.TextColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_10.TextStrokeTransparency = 0.000
+
+_215719463.Name = "215719463"
+_215719463.Parent = Frame
+_215719463.BackgroundColor3 = Color3.fromRGB(51, 53, 54)
+_215719463.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_215719463.BorderSizePixel = 0
+_215719463.Position = UDim2.new(0.527777791, 0, 0.77479893, 0)
+_215719463.Size = UDim2.new(0, 73, 0, 20)
+_215719463.Font = Enum.Font.SourceSans
+_215719463.TextColor3 = Color3.fromRGB(0, 0, 0)
+_215719463.TextSize = 14.000
+
+Roundify_11.Name = "Roundify"
+Roundify_11.Parent = _215719463
+Roundify_11.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_11.BackgroundTransparency = 1.000
+Roundify_11.Position = UDim2.new(0.5, 0, 0.5, 0)
+Roundify_11.Size = UDim2.new(1, 12, 1, 12)
+Roundify_11.Image = "rbxassetid://3570695787"
+Roundify_11.ImageColor3 = Color3.fromRGB(51, 53, 54)
+Roundify_11.ScaleType = Enum.ScaleType.Slice
+Roundify_11.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_11.SliceScale = 0.120
+
+TextLabel_11.Parent = _215719463
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.BorderColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(-0.0821917802, 0, -0.300000012, 0)
+TextLabel_11.Size = UDim2.new(0, 85, 0, 31)
+TextLabel_11.Font = Enum.Font.SourceSansBold
+TextLabel_11.Text = "Chronomalum"
+TextLabel_11.TextColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_11.TextStrokeTransparency = 0.000
+
+_138932314.Name = "138932314"
+_138932314.Parent = Frame
+_138932314.BackgroundColor3 = Color3.fromRGB(51, 53, 54)
+_138932314.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_138932314.BorderSizePixel = 0
+_138932314.Position = UDim2.new(0.527777791, 0, 0.890080452, 0)
+_138932314.Size = UDim2.new(0, 73, 0, 20)
+_138932314.Font = Enum.Font.SourceSans
+_138932314.TextColor3 = Color3.fromRGB(0, 0, 0)
+_138932314.TextSize = 14.000
+
+Roundify_12.Name = "Roundify"
+Roundify_12.Parent = _138932314
+Roundify_12.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_12.BackgroundTransparency = 1.000
+Roundify_12.Position = UDim2.new(0.5, 0, 0.5, 0)
+Roundify_12.Size = UDim2.new(1, 12, 1, 12)
+Roundify_12.Image = "rbxassetid://3570695787"
+Roundify_12.ImageColor3 = Color3.fromRGB(51, 53, 54)
+Roundify_12.ScaleType = Enum.ScaleType.Slice
+Roundify_12.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_12.SliceScale = 0.120
+
+TextLabel_12.Parent = _138932314
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.BorderColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Position = UDim2.new(-0.0821917802, 0, -0.300000012, 0)
+TextLabel_12.Size = UDim2.new(0, 85, 0, 31)
+TextLabel_12.Font = Enum.Font.SourceSansBold
+TextLabel_12.Text = "D. Aureus"
+TextLabel_12.TextColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_12.TextSize = 14.000
+TextLabel_12.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_12.TextStrokeTransparency = 0.000
+
+_1114768.Name = "1114768"
+_1114768.Parent = Frame
+_1114768.BackgroundColor3 = Color3.fromRGB(51, 53, 54)
+_1114768.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_1114768.BorderSizePixel = 0
+_1114768.Position = UDim2.new(0.116503254, 0, 0.322050929, 0)
+_1114768.Size = UDim2.new(0, 79, 0, 53)
+_1114768.Font = Enum.Font.SourceSans
+_1114768.TextColor3 = Color3.fromRGB(0, 0, 0)
+_1114768.TextSize = 14.000
+
+Roundify_13.Name = "Roundify"
+Roundify_13.Parent = _1114768
+Roundify_13.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_13.BackgroundTransparency = 1.000
+Roundify_13.Position = UDim2.new(0.500074625, 0, 0.560000002, 0)
+Roundify_13.Size = UDim2.new(1.01265836, 12, 1.48000002, 12)
+Roundify_13.Image = "rbxassetid://3570695787"
+Roundify_13.ImageColor3 = Color3.fromRGB(51, 53, 54)
+Roundify_13.ScaleType = Enum.ScaleType.Slice
+Roundify_13.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_13.SliceScale = 0.120
+
+TextLabel_13.Parent = _1114768
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.BorderColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_13.BorderSizePixel = 0
+TextLabel_13.Position = UDim2.new(-0.0822039247, 0, -0.300000012, 0)
+TextLabel_13.Size = UDim2.new(0, 92, 0, 83)
+TextLabel_13.Font = Enum.Font.SourceSansBold
+TextLabel_13.Text = "Kleos"
+TextLabel_13.TextColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_13.TextSize = 14.000
+TextLabel_13.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_13.TextStrokeTransparency = 0.000
+
+_183468963.Name = "183468963"
+_183468963.Parent = Frame
+_183468963.BackgroundColor3 = Color3.fromRGB(51, 53, 54)
+_183468963.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_183468963.BorderSizePixel = 0
+_183468963.Position = UDim2.new(0.315577328, 0, 0.330093831, 0)
+_183468963.Size = UDim2.new(0, 79, 0, 53)
+_183468963.Font = Enum.Font.SourceSans
+_183468963.TextColor3 = Color3.fromRGB(0, 0, 0)
+_183468963.TextSize = 14.000
+
+Roundify_14.Name = "Roundify"
+Roundify_14.Parent = _183468963
+Roundify_14.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_14.BackgroundTransparency = 1.000
+Roundify_14.Position = UDim2.new(0.500074625, 0, 0.560000002, 0)
+Roundify_14.Size = UDim2.new(1.01265836, 12, 1.48000002, 12)
+Roundify_14.Image = "rbxassetid://3570695787"
+Roundify_14.ImageColor3 = Color3.fromRGB(51, 53, 54)
+Roundify_14.ScaleType = Enum.ScaleType.Slice
+Roundify_14.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_14.SliceScale = 0.120
+
+TextLabel_14.Parent = _183468963
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.BorderColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_14.BorderSizePixel = 0
+TextLabel_14.Position = UDim2.new(-0.0822039247, 0, -0.300000012, 0)
+TextLabel_14.Size = UDim2.new(0, 92, 0, 83)
+TextLabel_14.Font = Enum.Font.SourceSansBold
+TextLabel_14.Text = "Ghosdeeri"
+TextLabel_14.TextColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_14.TextSize = 14.000
+TextLabel_14.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_14.TextStrokeTransparency = 0.000
+
+_13702160.Name = "13702160"
+_13702160.Parent = Frame
+_13702160.BackgroundColor3 = Color3.fromRGB(51, 53, 54)
+_13702160.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_13702160.BorderSizePixel = 0
+_13702160.Position = UDim2.new(0.315577328, 0, 0.600871325, 0)
+_13702160.Size = UDim2.new(0, 79, 0, 53)
+_13702160.Font = Enum.Font.SourceSans
+_13702160.TextColor3 = Color3.fromRGB(0, 0, 0)
+_13702160.TextSize = 14.000
+
+Roundify_15.Name = "Roundify"
+Roundify_15.Parent = _13702160
+Roundify_15.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_15.BackgroundTransparency = 1.000
+Roundify_15.Position = UDim2.new(0.500074625, 0, 0.560000002, 0)
+Roundify_15.Size = UDim2.new(1.01265836, 12, 1.48000002, 12)
+Roundify_15.Image = "rbxassetid://3570695787"
+Roundify_15.ImageColor3 = Color3.fromRGB(51, 53, 54)
+Roundify_15.ScaleType = Enum.ScaleType.Slice
+Roundify_15.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_15.SliceScale = 0.120
+
+TextLabel_15.Parent = _13702160
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.BorderColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_15.BorderSizePixel = 0
+TextLabel_15.Position = UDim2.new(-0.0822039247, 0, -0.300000012, 0)
+TextLabel_15.Size = UDim2.new(0, 92, 0, 83)
+TextLabel_15.Font = Enum.Font.SourceSansBold
+TextLabel_15.Text = "Tragedy"
+TextLabel_15.TextColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_15.TextSize = 14.000
+TextLabel_15.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_15.TextStrokeTransparency = 0.000
+
+_162067148.Name = "162067148"
+_162067148.Parent = Frame
+_162067148.BackgroundColor3 = Color3.fromRGB(51, 53, 54)
+_162067148.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_162067148.BorderSizePixel = 0
+_162067148.Position = UDim2.new(0.116503254, 0, 0.600871325, 0)
+_162067148.Size = UDim2.new(0, 79, 0, 53)
+_162067148.Font = Enum.Font.SourceSans
+_162067148.TextColor3 = Color3.fromRGB(0, 0, 0)
+_162067148.TextSize = 14.000
+
+Roundify_16.Name = "Roundify"
+Roundify_16.Parent = _162067148
+Roundify_16.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_16.BackgroundTransparency = 1.000
+Roundify_16.Position = UDim2.new(0.500074625, 0, 0.560000002, 0)
+Roundify_16.Size = UDim2.new(1.01265836, 12, 1.48000002, 12)
+Roundify_16.Image = "rbxassetid://3570695787"
+Roundify_16.ImageColor3 = Color3.fromRGB(51, 53, 54)
+Roundify_16.ScaleType = Enum.ScaleType.Slice
+Roundify_16.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_16.SliceScale = 0.120
+
+TextLabel_16.Parent = _162067148
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.BorderColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_16.BorderSizePixel = 0
+TextLabel_16.Position = UDim2.new(-0.0822039247, 0, -0.300000012, 0)
+TextLabel_16.Size = UDim2.new(0, 92, 0, 83)
+TextLabel_16.Font = Enum.Font.SourceSansBold
+TextLabel_16.Text = "Dominus Astra"
+TextLabel_16.TextColor3 = Color3.fromRGB(59, 60, 62)
+TextLabel_16.TextSize = 14.000
+TextLabel_16.TextStrokeColor3 = Color3.fromRGB(216, 209, 0)
+TextLabel_16.TextStrokeTransparency = 0.000
+
+-- Scripts:
+
+local function OHAHRWD_fake_script() -- _24123795.LocalScript 
+	local script = Instance.new('LocalScript', _24123795)
+
+	local itemString = script.Parent.Name
+	local item = tonumber(itemString)
+	local args = {
+		[1] = item
+	}
+	
+	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+end
+coroutine.wrap(OHAHRWD_fake_script)()
+local function SIXJJLY_fake_script() -- _23705521.LocalScript 
+	local script = Instance.new('LocalScript', _23705521)
+
+	local itemString = script.Parent.Name
+	local item = tonumber(itemString)
+	local args = {
+		[1] = item
+	}
+	
+	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+end
+coroutine.wrap(SIXJJLY_fake_script)()
+local function OXEL_fake_script() -- _63043890.LocalScript 
+	local script = Instance.new('LocalScript', _63043890)
+
+	local itemString = script.Parent.Name
+	local item = tonumber(itemString)
+	local args = {
+		[1] = item
+	}
+	
+	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+end
+coroutine.wrap(OXEL_fake_script)()
+local function UCGNPY_fake_script() -- _22546563.LocalScript 
+	local script = Instance.new('LocalScript', _22546563)
+
+	local itemString = script.Parent.Name
+	local item = tonumber(itemString)
+	local args = {
+		[1] = item
+	}
+	
+	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+end
+coroutine.wrap(UCGNPY_fake_script)()
+local function VBNEDMB_fake_script() -- _382881237.LocalScript 
+	local script = Instance.new('LocalScript', _382881237)
+
+	local itemString = script.Parent.Name
+	local item = tonumber(itemString)
+	local args = {
+		[1] = item
+	}
+	
+	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+end
+coroutine.wrap(VBNEDMB_fake_script)()
+local function YFMC_fake_script() -- _188003914.LocalScript 
+	local script = Instance.new('LocalScript', _188003914)
+
+	local itemString = script.Parent.Name
+	local item = tonumber(itemString)
+	local args = {
+		[1] = item
+	}
+	
+	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+end
+coroutine.wrap(YFMC_fake_script)()
+local function CSFF_fake_script() -- _12908119.LocalScript 
+	local script = Instance.new('LocalScript', _12908119)
+
+	local itemString = script.Parent.Name
+	local item = tonumber(itemString)
+	local args = {
+		[1] = item
+	}
+	
+	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+end
+coroutine.wrap(CSFF_fake_script)()
+local function BWSWN_fake_script() -- _146134358.LocalScript 
+	local script = Instance.new('LocalScript', _146134358)
+
+	local itemString = script.Parent.Name
+	local item = tonumber(itemString)
+	local args = {
+		[1] = item
+	}
+	
+	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+end
+coroutine.wrap(BWSWN_fake_script)()
+local function ERILIT_fake_script() -- _17449820.LocalScript 
+	local script = Instance.new('LocalScript', _17449820)
+
+	local itemString = script.Parent.Name
+	local item = tonumber(itemString)
+	local args = {
+		[1] = item
+	}
+	
+	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+end
+coroutine.wrap(ERILIT_fake_script)()
+local function JRZVTZU_fake_script() -- _439984665.LocalScript 
+	local script = Instance.new('LocalScript', _439984665)
+
+	local itemString = script.Parent.Name
+	local item = tonumber(itemString)
+	local args = {
+		[1] = item
+	}
+	
+	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+end
+coroutine.wrap(JRZVTZU_fake_script)()
+local function FULUZGV_fake_script() -- _215719463.LocalScript 
+	local script = Instance.new('LocalScript', _215719463)
+
+	local itemString = script.Parent.Name
+	local item = tonumber(itemString)
+	local args = {
+		[1] = item
+	}
+	
+	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+end
+coroutine.wrap(FULUZGV_fake_script)()
+local function BPYH_fake_script() -- _138932314.LocalScript 
+	local script = Instance.new('LocalScript', _138932314)
+
+	local itemString = script.Parent.Name
+	local item = tonumber(itemString)
+	local args = {
+		[1] = item
+	}
+	
+	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+end
+coroutine.wrap(BPYH_fake_script)()
+local function XKEKHG_fake_script() -- _1114768.LocalScript 
+	local script = Instance.new('LocalScript', _1114768)
+
+	local itemString = script.Parent.Name
+	local item = tonumber(itemString)
+	local args = {
+		[1] = item
+	}
+	
+	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+end
+coroutine.wrap(XKEKHG_fake_script)()
+local function ZIECER_fake_script() -- _183468963.LocalScript 
+	local script = Instance.new('LocalScript', _183468963)
+
+	local itemString = script.Parent.Name
+	local item = tonumber(itemString)
+	local args = {
+		[1] = item
+	}
+	
+	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+end
+coroutine.wrap(ZIECER_fake_script)()
+local function ZYMGL_fake_script() -- _13702160.LocalScript 
+	local script = Instance.new('LocalScript', _13702160)
+
+	local itemString = script.Parent.Name
+	local item = tonumber(itemString)
+	local args = {
+		[1] = item
+	}
+	
+	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+end
+coroutine.wrap(ZYMGL_fake_script)()
+local function NWZF_fake_script() -- _162067148.LocalScript 
+	local script = Instance.new('LocalScript', _162067148)
+
+	local itemString = script.Parent.Name
+	local item = tonumber(itemString)
+	local args = {
+		[1] = item
+	}
+	
+	game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+end
+coroutine.wrap(NWZF_fake_script)()
