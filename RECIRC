@@ -866,7 +866,7 @@ TextLabel_18.TextStrokeTransparency = 0.000
 
 -- Scripts:
 
-local function MEOL_fake_script() -- _24123795.LocalScript 
+local function LWHNDG_fake_script() -- _24123795.LocalScript 
 	local script = Instance.new('LocalScript', _24123795)
 
 	
@@ -880,8 +880,8 @@ local function MEOL_fake_script() -- _24123795.LocalScript
 	
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
 end
-coroutine.wrap(MEOL_fake_script)()
-local function PURQ_fake_script() -- _23705521.LocalScript 
+coroutine.wrap(LWHNDG_fake_script)()
+local function IQEUUR_fake_script() -- _23705521.LocalScript 
 	local script = Instance.new('LocalScript', _23705521)
 
 	
@@ -895,8 +895,8 @@ local function PURQ_fake_script() -- _23705521.LocalScript
 	
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
 end
-coroutine.wrap(PURQ_fake_script)()
-local function VDFAZNM_fake_script() -- _63043890.LocalScript 
+coroutine.wrap(IQEUUR_fake_script)()
+local function OYPIFL_fake_script() -- _63043890.LocalScript 
 	local script = Instance.new('LocalScript', _63043890)
 
 	
@@ -910,8 +910,8 @@ local function VDFAZNM_fake_script() -- _63043890.LocalScript
 	
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
 end
-coroutine.wrap(VDFAZNM_fake_script)()
-local function ZBTWTUB_fake_script() -- _22546563.LocalScript 
+coroutine.wrap(OYPIFL_fake_script)()
+local function UOPCP_fake_script() -- _22546563.LocalScript 
 	local script = Instance.new('LocalScript', _22546563)
 
 	
@@ -925,8 +925,8 @@ local function ZBTWTUB_fake_script() -- _22546563.LocalScript
 	
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
 end
-coroutine.wrap(ZBTWTUB_fake_script)()
-local function IUATMDF_fake_script() -- _382881237.LocalScript 
+coroutine.wrap(UOPCP_fake_script)()
+local function CLOB_fake_script() -- _382881237.LocalScript 
 	local script = Instance.new('LocalScript', _382881237)
 
 	
@@ -940,8 +940,8 @@ local function IUATMDF_fake_script() -- _382881237.LocalScript
 	
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
 end
-coroutine.wrap(IUATMDF_fake_script)()
-local function PHDQA_fake_script() -- _188003914.LocalScript 
+coroutine.wrap(CLOB_fake_script)()
+local function BSNA_fake_script() -- _188003914.LocalScript 
 	local script = Instance.new('LocalScript', _188003914)
 
 	
@@ -955,8 +955,8 @@ local function PHDQA_fake_script() -- _188003914.LocalScript
 	
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
 end
-coroutine.wrap(PHDQA_fake_script)()
-local function BAOYFYD_fake_script() -- _12908119.LocalScript 
+coroutine.wrap(BSNA_fake_script)()
+local function FUVW_fake_script() -- _12908119.LocalScript 
 	local script = Instance.new('LocalScript', _12908119)
 
 	
@@ -970,8 +970,8 @@ local function BAOYFYD_fake_script() -- _12908119.LocalScript
 	
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
 end
-coroutine.wrap(BAOYFYD_fake_script)()
-local function RSJXMO_fake_script() -- _146134358.LocalScript 
+coroutine.wrap(FUVW_fake_script)()
+local function AMUP_fake_script() -- _146134358.LocalScript 
 	local script = Instance.new('LocalScript', _146134358)
 
 	
@@ -985,8 +985,8 @@ local function RSJXMO_fake_script() -- _146134358.LocalScript
 	
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
 end
-coroutine.wrap(RSJXMO_fake_script)()
-local function CROGGTN_fake_script() -- _17449820.LocalScript 
+coroutine.wrap(AMUP_fake_script)()
+local function HQQYMIX_fake_script() -- _17449820.LocalScript 
 	local script = Instance.new('LocalScript', _17449820)
 
 	
@@ -1000,8 +1000,8 @@ local function CROGGTN_fake_script() -- _17449820.LocalScript
 	
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
 end
-coroutine.wrap(CROGGTN_fake_script)()
-local function QKDAV_fake_script() -- _439984665.LocalScript 
+coroutine.wrap(HQQYMIX_fake_script)()
+local function ZXAR_fake_script() -- _439984665.LocalScript 
 	local script = Instance.new('LocalScript', _439984665)
 
 	
@@ -1015,8 +1015,8 @@ local function QKDAV_fake_script() -- _439984665.LocalScript
 	
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
 end
-coroutine.wrap(QKDAV_fake_script)()
-local function IYAHZD_fake_script() -- _215719463.LocalScript 
+coroutine.wrap(ZXAR_fake_script)()
+local function BFMZTEL_fake_script() -- _215719463.LocalScript 
 	local script = Instance.new('LocalScript', _215719463)
 
 	
@@ -1030,8 +1030,8 @@ local function IYAHZD_fake_script() -- _215719463.LocalScript
 	
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
 end
-coroutine.wrap(IYAHZD_fake_script)()
-local function XDVYI_fake_script() -- _138932314.LocalScript 
+coroutine.wrap(BFMZTEL_fake_script)()
+local function NVQCRJB_fake_script() -- _138932314.LocalScript 
 	local script = Instance.new('LocalScript', _138932314)
 
 	
@@ -1045,8 +1045,8 @@ local function XDVYI_fake_script() -- _138932314.LocalScript
 	
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
 end
-coroutine.wrap(XDVYI_fake_script)()
-local function OPNWPUM_fake_script() -- _1114768.LocalScript 
+coroutine.wrap(NVQCRJB_fake_script)()
+local function MRAKK_fake_script() -- _1114768.LocalScript 
 	local script = Instance.new('LocalScript', _1114768)
 
 	
@@ -1060,8 +1060,8 @@ local function OPNWPUM_fake_script() -- _1114768.LocalScript
 	
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
 end
-coroutine.wrap(OPNWPUM_fake_script)()
-local function MHJB_fake_script() -- _183468963.LocalScript 
+coroutine.wrap(MRAKK_fake_script)()
+local function VPIEA_fake_script() -- _183468963.LocalScript 
 	local script = Instance.new('LocalScript', _183468963)
 
 	
@@ -1075,8 +1075,8 @@ local function MHJB_fake_script() -- _183468963.LocalScript
 	
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
 end
-coroutine.wrap(MHJB_fake_script)()
-local function NPDZAYM_fake_script() -- _13702160.LocalScript 
+coroutine.wrap(VPIEA_fake_script)()
+local function WBKJ_fake_script() -- _13702160.LocalScript 
 	local script = Instance.new('LocalScript', _13702160)
 
 	
@@ -1090,8 +1090,8 @@ local function NPDZAYM_fake_script() -- _13702160.LocalScript
 	
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
 end
-coroutine.wrap(NPDZAYM_fake_script)()
-local function LKZZ_fake_script() -- _162067148.LocalScript 
+coroutine.wrap(WBKJ_fake_script)()
+local function PQKKZ_fake_script() -- _162067148.LocalScript 
 	local script = Instance.new('LocalScript', _162067148)
 
 	
@@ -1105,8 +1105,8 @@ local function LKZZ_fake_script() -- _162067148.LocalScript
 	
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
 end
-coroutine.wrap(LKZZ_fake_script)()
-local function DTIEY_fake_script() -- _24123795_2.LocalScript 
+coroutine.wrap(PQKKZ_fake_script)()
+local function JIXM_fake_script() -- _24123795_2.LocalScript 
 	local script = Instance.new('LocalScript', _24123795_2)
 
 	
@@ -1120,8 +1120,8 @@ local function DTIEY_fake_script() -- _24123795_2.LocalScript
 	
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
 end
-coroutine.wrap(DTIEY_fake_script)()
-local function LDZN_fake_script() -- _102611668.LocalScript 
+coroutine.wrap(JIXM_fake_script)()
+local function NEJSUGQ_fake_script() -- _102611668.LocalScript 
 	local script = Instance.new('LocalScript', _102611668)
 
 	
@@ -1135,4 +1135,4 @@ local function LDZN_fake_script() -- _102611668.LocalScript
 	
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
 end
-coroutine.wrap(LDZN_fake_script)()
+coroutine.wrap(NEJSUGQ_fake_script)()
