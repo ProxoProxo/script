@@ -296,7 +296,7 @@ TextButton_Roundify_12px_4.SliceScale = 0.120
 
 -- Scripts:
 
-local function MPWYKS_fake_script() -- BuyAll.LocalScript 
+local function DDJNCP_fake_script() -- BuyAll.LocalScript 
 	local script = Instance.new('LocalScript', BuyAll)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -332,7 +332,8 @@ local function MPWYKS_fake_script() -- BuyAll.LocalScript
 	
 			-- Set up the parent
 			local parent = player.PlayerGui.Game.Menus.Marketplace.Box.Catalog.Scroller
-	
+			
+		
 			-- Function to check if a frame is added
 			local function checkFrameAdded(parent)
 				local frameAdded = false
@@ -342,12 +343,15 @@ local function MPWYKS_fake_script() -- BuyAll.LocalScript
 					if addedChild:IsA("Frame") then
 						frameAdded = true
 						print("A Frame named", addedChild.Name, "was added to", parent:GetFullName())
-						itemIDInfo = tonumber(addedChild)
+						itemIDInfo = tonumber(addedChild.Name)
 						itemDrop = true
+					else
+					wait(0.3333333)
+						print("script works, nothing has dropped yet")
 					end
 				until frameAdded
 			end
-			
+			checkFrameAdded(parent)
 		end
 		while wait(0.2) do
 			itemUpdates()
@@ -361,8 +365,8 @@ local function MPWYKS_fake_script() -- BuyAll.LocalScript
 	
 	end)
 end
-coroutine.wrap(MPWYKS_fake_script)()
-local function LRNDLQR_fake_script() -- Add.LocalScript 
+coroutine.wrap(DDJNCP_fake_script)()
+local function UGLUGWR_fake_script() -- Add.LocalScript 
 	local script = Instance.new('LocalScript', Add)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -378,4 +382,4 @@ local function LRNDLQR_fake_script() -- Add.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LRNDLQR_fake_script)()
+coroutine.wrap(UGLUGWR_fake_script)()
