@@ -1,0 +1,381 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MobOrPC = Instance.new("ImageLabel")
+local Frame = Instance.new("ImageLabel")
+local Frame_2 = Instance.new("Frame")
+local Mobile = Instance.new("ImageButton")
+local Computer = Instance.new("ImageButton")
+local Frame_3 = Instance.new("ImageLabel")
+local BottomShade = Instance.new("Folder")
+local Frame_4 = Instance.new("Frame")
+local Frame_5 = Instance.new("ImageLabel")
+local TopShade = Instance.new("Folder")
+local Frame_6 = Instance.new("Frame")
+local Frame_7 = Instance.new("ImageLabel")
+local TextBox = Instance.new("TextBox")
+local Frame_8 = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local DropButtons = Instance.new("Folder")
+local BuyAll = Instance.new("TextButton")
+local TextButton_Roundify_12px = Instance.new("ImageLabel")
+local TextButton_Roundify_12px_2 = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Add = Instance.new("TextButton")
+local TextButton_Roundify_12px_3 = Instance.new("ImageLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextButton_Roundify_12px_4 = Instance.new("ImageLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+MobOrPC.Name = "MobOrPC"
+MobOrPC.Parent = ScreenGui
+MobOrPC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MobOrPC.BackgroundTransparency = 1.000
+MobOrPC.Position = UDim2.new(0.321120679, 0, 0.395763665, 0)
+MobOrPC.Size = UDim2.new(0, 331, 0, 187)
+MobOrPC.Visible = false
+MobOrPC.Image = "rbxassetid://3570695787"
+MobOrPC.ImageColor3 = Color3.fromRGB(86, 86, 86)
+MobOrPC.ScaleType = Enum.ScaleType.Slice
+MobOrPC.SliceCenter = Rect.new(100, 100, 100, 100)
+MobOrPC.SliceScale = 0.120
+
+Frame.Name = "Frame"
+Frame.Parent = MobOrPC
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Size = UDim2.new(0, 331, 0, 25)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(75, 75, 75)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+
+Frame_2.Parent = MobOrPC
+Frame_2.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 0.053475935, 0)
+Frame_2.Size = UDim2.new(0, 331, 0, 15)
+
+Mobile.Name = "Mobile"
+Mobile.Parent = MobOrPC
+Mobile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mobile.BackgroundTransparency = 1.000
+Mobile.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mobile.BorderSizePixel = 0
+Mobile.Position = UDim2.new(0.640483379, 0, 0.299465239, 0)
+Mobile.Size = UDim2.new(0, 74, 0, 74)
+Mobile.Image = "http://www.roblox.com/asset/?id=16620578307"
+
+Computer.Name = "Computer"
+Computer.Parent = MobOrPC
+Computer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Computer.BackgroundTransparency = 1.000
+Computer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Computer.BorderSizePixel = 0
+Computer.Position = UDim2.new(0.129909366, 0, 0.299465239, 0)
+Computer.Size = UDim2.new(0, 74, 0, 74)
+Computer.Image = "http://www.roblox.com/asset/?id=16620577037"
+
+Frame_3.Name = "Frame"
+Frame_3.Parent = ScreenGui
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.BackgroundTransparency = 1.000
+Frame_3.BorderSizePixel = 4
+Frame_3.Position = UDim2.new(0.37619406, 0, 0.37225008, 0)
+Frame_3.Size = UDim2.new(0, 228, 0, 228)
+Frame_3.Image = "rbxassetid://3570695787"
+Frame_3.ImageColor3 = Color3.fromRGB(86, 86, 86)
+Frame_3.ScaleType = Enum.ScaleType.Slice
+Frame_3.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame_3.SliceScale = 0.120
+
+BottomShade.Name = "Bottom Shade"
+BottomShade.Parent = Frame_3
+
+Frame_4.Parent = BottomShade
+Frame_4.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0, 0, 0.88680923, 0)
+Frame_4.Rotation = 180.000
+Frame_4.Size = UDim2.new(0, 234, 0, 7)
+
+Frame_5.Name = "Frame"
+Frame_5.Parent = BottomShade
+Frame_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_5.BackgroundTransparency = 1.000
+Frame_5.Position = UDim2.new(0, 0, 0.88596493, 0)
+Frame_5.Rotation = 180.000
+Frame_5.Size = UDim2.new(0, 234, 0, 25)
+Frame_5.Image = "rbxassetid://3570695787"
+Frame_5.ImageColor3 = Color3.fromRGB(75, 75, 75)
+Frame_5.ScaleType = Enum.ScaleType.Slice
+Frame_5.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame_5.SliceScale = 0.120
+
+TopShade.Name = "Top Shade"
+TopShade.Parent = Frame_3
+
+Frame_6.Parent = TopShade
+Frame_6.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Frame_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_6.BorderSizePixel = 0
+Frame_6.Position = UDim2.new(0, 0, 0.0754057243, 0)
+Frame_6.Size = UDim2.new(0, 234, 0, 8)
+
+Frame_7.Name = "Frame"
+Frame_7.Parent = TopShade
+Frame_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_7.BackgroundTransparency = 1.000
+Frame_7.Size = UDim2.new(0, 234, 0, 25)
+Frame_7.Image = "rbxassetid://3570695787"
+Frame_7.ImageColor3 = Color3.fromRGB(75, 75, 75)
+Frame_7.ScaleType = Enum.ScaleType.Slice
+Frame_7.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame_7.SliceScale = 0.120
+
+TextBox.Parent = Frame_3
+TextBox.BackgroundColor3 = Color3.fromRGB(106, 106, 106)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0663390681, 0, 0.522837341, 0)
+TextBox.Size = UDim2.new(0, 200, 0, 19)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "Insert AssetID here"
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+Frame_8.Name = "Frame"
+Frame_8.Parent = Frame_3
+Frame_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_8.BackgroundTransparency = 1.000
+Frame_8.Position = UDim2.new(-0.0278997589, 0, -0.00438596494, 0)
+Frame_8.Size = UDim2.new(0, 241, 0, 228)
+Frame_8.ZIndex = -1
+Frame_8.Image = "rbxassetid://3570695787"
+Frame_8.ImageColor3 = Color3.fromRGB(75, 75, 75)
+Frame_8.ScaleType = Enum.ScaleType.Slice
+Frame_8.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame_8.SliceScale = 0.120
+
+TextLabel.Parent = Frame_3
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0663390681, 0, 0.201754391, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 19)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Inactive"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+DropButtons.Name = "Drop Buttons"
+DropButtons.Parent = Frame_3
+
+BuyAll.Name = "BuyAll"
+BuyAll.Parent = DropButtons
+BuyAll.BackgroundColor3 = Color3.fromRGB(190, 25, 255)
+BuyAll.BackgroundTransparency = 1.000
+BuyAll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BuyAll.BorderSizePixel = 0
+BuyAll.Position = UDim2.new(0.0663390681, 0, 0.285087705, 0)
+BuyAll.Size = UDim2.new(0, 200, 0, 45)
+BuyAll.Font = Enum.Font.SourceSans
+BuyAll.TextColor3 = Color3.fromRGB(0, 0, 0)
+BuyAll.TextSize = 14.000
+
+TextButton_Roundify_12px.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px.Parent = BuyAll
+TextButton_Roundify_12px.Active = true
+TextButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
+TextButton_Roundify_12px.BackgroundTransparency = 1.000
+TextButton_Roundify_12px.LayoutOrder = 1
+TextButton_Roundify_12px.Position = UDim2.new(0.499923259, 0, 0.5, 0)
+TextButton_Roundify_12px.Selectable = true
+TextButton_Roundify_12px.Size = UDim2.new(0.999846518, 0, 1, 0)
+TextButton_Roundify_12px.ZIndex = 2
+TextButton_Roundify_12px.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px.ImageColor3 = Color3.fromRGB(85, 0, 255)
+TextButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px.SliceScale = 0.120
+
+TextButton_Roundify_12px_2.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_2.Parent = BuyAll
+TextButton_Roundify_12px_2.Active = true
+TextButton_Roundify_12px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_2.BackgroundColor3 = Color3.fromRGB(85, 0, 255)
+TextButton_Roundify_12px_2.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_2.Position = UDim2.new(0.500576675, 0, 0.600000024, 0)
+TextButton_Roundify_12px_2.Selectable = true
+TextButton_Roundify_12px_2.Size = UDim2.new(0.999846578, 0, 1, 0)
+TextButton_Roundify_12px_2.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_2.ImageColor3 = Color3.fromRGB(85, 85, 255)
+TextButton_Roundify_12px_2.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_2.SliceScale = 0.120
+
+TextLabel_2.Parent = BuyAll
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.000653381343, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 199, 0, 50)
+TextLabel_2.ZIndex = 3
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "Buy All Drops"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 18.000
+
+Add.Name = "Add"
+Add.Parent = DropButtons
+Add.BackgroundColor3 = Color3.fromRGB(190, 25, 255)
+Add.BackgroundTransparency = 1.000
+Add.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Add.BorderSizePixel = 0
+Add.Position = UDim2.new(0.0663390681, 0, 0.64171201, 0)
+Add.Size = UDim2.new(0, 200, 0, 45)
+Add.Font = Enum.Font.SourceSans
+Add.TextColor3 = Color3.fromRGB(162, 32, 255)
+Add.TextSize = 14.000
+
+TextButton_Roundify_12px_3.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_3.Parent = Add
+TextButton_Roundify_12px_3.Active = true
+TextButton_Roundify_12px_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_3.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_3.Position = UDim2.new(0.5, 0, 0.510344684, 0)
+TextButton_Roundify_12px_3.Selectable = true
+TextButton_Roundify_12px_3.Size = UDim2.new(1, 0, 1.00383151, 0)
+TextButton_Roundify_12px_3.ZIndex = 2
+TextButton_Roundify_12px_3.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_3.ImageColor3 = Color3.fromRGB(85, 0, 255)
+TextButton_Roundify_12px_3.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_3.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_3.SliceScale = 0.120
+
+TextLabel_3.Parent = Add
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0, 0, 0.00842895545, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 45)
+TextLabel_3.ZIndex = 3
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.Text = "Add"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 18.000
+
+TextButton_Roundify_12px_4.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_4.Parent = Add
+TextButton_Roundify_12px_4.Active = true
+TextButton_Roundify_12px_4.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_4.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_4.Position = UDim2.new(0.5, 0, 0.610727847, 0)
+TextButton_Roundify_12px_4.Selectable = true
+TextButton_Roundify_12px_4.Size = UDim2.new(1, 0, 1.00383139, 0)
+TextButton_Roundify_12px_4.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_4.ImageColor3 = Color3.fromRGB(85, 85, 255)
+TextButton_Roundify_12px_4.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_4.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_4.SliceScale = 0.120
+
+-- Scripts:
+
+local function MPWYKS_fake_script() -- BuyAll.LocalScript 
+	local script = Instance.new('LocalScript', BuyAll)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		--Script goes here later
+	local timeSec = nil
+		local itemID = nil
+		local itemOnSale = nil
+		local itemIDInfo = nil
+		local quantity = nil
+		local itemDrop = nil
+		local counter = 0
+		
+		
+		local function BuyID(numID)
+			counter = 0
+			while counter <= 5 do
+				if itemOnSale == false then
+				wait(6)
+				local args = {
+					[1] = numID
+				}
+	
+				game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
+			end
+				counter=counter+1		
+			end
+	
+	end
+		
+		local function itemUpdates ()
+	
+			local player = game.Players.LocalPlayer
+	
+			-- Set up the parent
+			local parent = player.PlayerGui.Game.Menus.Marketplace.Box.Catalog.Scroller
+	
+			-- Function to check if a frame is added
+			local function checkFrameAdded(parent)
+				local frameAdded = false
+	
+				repeat
+					local addedChild = parent.ChildAdded:Wait()
+					if addedChild:IsA("Frame") then
+						frameAdded = true
+						print("A Frame named", addedChild.Name, "was added to", parent:GetFullName())
+						itemIDInfo = tonumber(addedChild)
+						itemDrop = true
+					end
+				until frameAdded
+			end
+			
+		end
+		while wait(0.2) do
+			itemUpdates()
+			if itemDrop == true then
+				itemDrop = false
+				BuyID(itemIDInfo)
+			else
+				print("No New Items Yet")
+			end
+		end
+	
+	end)
+end
+coroutine.wrap(MPWYKS_fake_script)()
+local function LRNDLQR_fake_script() -- Add.LocalScript 
+	local script = Instance.new('LocalScript', Add)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		local inputID = tonumber(script.Parent.Parent.Parent.TextBox.Text)
+		while true do
+			wait(1.5)
+			local args = {
+				[1] = inputID
+			}
+	
+			game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
+		end
+	end)
+end
+coroutine.wrap(LRNDLQR_fake_script)()
