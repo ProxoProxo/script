@@ -299,7 +299,7 @@ TextButton_Roundify_12px_4.SliceScale = 0.120
 
 -- Scripts:
 
-local function NAEU_fake_script() -- Add.LocalScript 
+local function VXYGL_fake_script() -- Add.LocalScript 
 	local script = Instance.new('LocalScript', Add)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -311,8 +311,8 @@ local function NAEU_fake_script() -- Add.LocalScript
 				[1] = inputID
 			}
 	
-			game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
-		end
+			game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.MarketService.RF.Buy:InvokeServer(unpack(args))
+	end
 	end)
 end
-coroutine.wrap(NAEU_fake_script)()
+coroutine.wrap(VXYGL_fake_script)()
