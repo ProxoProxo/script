@@ -173,6 +173,7 @@ TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
 TextLabel.Position = UDim2.new(0.0663390681, 0, 0.201754391, 0)
 TextLabel.Size = UDim2.new(0, 200, 0, 19)
+TextLabel.Visible = false
 TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "Inactive"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -183,12 +184,14 @@ DropButtons.Parent = Frame_3
 
 BuyAll.Name = "BuyAll"
 BuyAll.Parent = DropButtons
+BuyAll.Active = false
 BuyAll.BackgroundColor3 = Color3.fromRGB(190, 25, 255)
 BuyAll.BackgroundTransparency = 1.000
 BuyAll.BorderColor3 = Color3.fromRGB(0, 0, 0)
 BuyAll.BorderSizePixel = 0
 BuyAll.Position = UDim2.new(0.0663390681, 0, 0.285087705, 0)
 BuyAll.Size = UDim2.new(0, 200, 0, 45)
+BuyAll.Visible = false
 BuyAll.Font = Enum.Font.SourceSans
 BuyAll.TextColor3 = Color3.fromRGB(0, 0, 0)
 BuyAll.TextSize = 14.000
@@ -296,84 +299,14 @@ TextButton_Roundify_12px_4.SliceScale = 0.120
 
 -- Scripts:
 
-local function DDJNCP_fake_script() -- BuyAll.LocalScript 
-	local script = Instance.new('LocalScript', BuyAll)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		--Script goes here later
-	local timeSec = nil
-		local itemID = nil
-		local itemOnSale = nil
-		local itemIDInfo = nil
-		local quantity = nil
-		local itemDrop = nil
-		local counter = 0
-		
-		
-		local function BuyID(numID)
-			counter = 0
-			while counter <= 5 do
-				if itemOnSale == false then
-				wait(6)
-				local args = {
-					[1] = numID
-				}
-	
-				game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
-			end
-				counter=counter+1		
-			end
-	
-	end
-		
-		local function itemUpdates ()
-	
-			local player = game.Players.LocalPlayer
-	
-			-- Set up the parent
-			local parent = player.PlayerGui.Game.Menus.Marketplace.Box.Catalog.Scroller
-			
-		
-			-- Function to check if a frame is added
-			local function checkFrameAdded(parent)
-				local frameAdded = false
-	
-				repeat
-					local addedChild = parent.ChildAdded:Wait()
-					if addedChild:IsA("Frame") then
-						frameAdded = true
-						print("A Frame named", addedChild.Name, "was added to", parent:GetFullName())
-						itemIDInfo = tonumber(addedChild.Name)
-						itemDrop = true
-					else
-					wait(0.3333333)
-						print("script works, nothing has dropped yet")
-					end
-				until frameAdded
-			end
-			checkFrameAdded(parent)
-		end
-		while wait(0.2) do
-			itemUpdates()
-			if itemDrop == true then
-				itemDrop = false
-				BuyID(itemIDInfo)
-			else
-				print("No New Items Yet")
-			end
-		end
-	
-	end)
-end
-coroutine.wrap(DDJNCP_fake_script)()
-local function UGLUGWR_fake_script() -- Add.LocalScript 
+local function NAEU_fake_script() -- Add.LocalScript 
 	local script = Instance.new('LocalScript', Add)
 
 	script.Parent.MouseButton1Click:Connect(function()
 	
 		local inputID = tonumber(script.Parent.Parent.Parent.TextBox.Text)
 		while true do
-			wait(1.5)
+			wait(0.2)
 			local args = {
 				[1] = inputID
 			}
@@ -382,4 +315,4 @@ local function UGLUGWR_fake_script() -- Add.LocalScript
 		end
 	end)
 end
-coroutine.wrap(UGLUGWR_fake_script)()
+coroutine.wrap(NAEU_fake_script)()
