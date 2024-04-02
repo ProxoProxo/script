@@ -1,5 +1,5 @@
 while true do
-wait(0.1)
+wait(2)
 local args = {
     [1] = 32567578
 }
