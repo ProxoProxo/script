@@ -1,0 +1,611 @@
+--[[
+	Controls
+ 
+	Q (hold)- Gradually teleport forward 
+	G- Teleport forward 5 studs
+	H- Teleport forward 10 studs
+ 
+	T (hold)- Teleport behind nearest valid player
+	F (hold)- Lock mouse onto nearest player
+ 
+	'Aimbot TK' will detmine whether the aimbot will 
+	ignore teamates (will attack teamates if true)
+ 
+	'Aimbot uses reticle' will determine whether the
+	aimbot will lock onto the nearest player to the 
+	mouse or closet to your actual character
+ 
+	'Max teleport distance' will set the limit for
+	the T keybind (useful for games with anticheats)
+ 
+ 
+	Scripted by genericusername1231#7218
+]]
+ 
+player = game.Players.LocalPlayer
+mouse = player:GetMouse()
+uis = game:GetService("UserInputService")
+rs = game:GetService("RunService")
+ 
+connections = {}
+aimbotactive = true
+clr = false
+currenttool = nil
+buttondown = false
+ 
+aimbotTK = true
+snaptoreticle = true
+teleportenabled = true
+acceptableteleportdistance = 20
+ 
+local s, e = pcall(function()
+	if not player.PlayerGui:FindFirstChild("Aimbot") then
+		gui = Instance.new("ScreenGui")
+		local Frame = Instance.new("Frame")
+		local ImageLabel = Instance.new("ImageLabel")
+		local AimbotTKT = Instance.new("TextLabel")
+		local AimbotTK = Instance.new("TextButton")
+		local Reticle = Instance.new("TextButton")
+		local ReticleT = Instance.new("TextLabel")
+		local Teleport = Instance.new("TextButton")
+		local TeleportT = Instance.new("TextLabel")
+		local TeleportDist = Instance.new("TextBox")
+		local TeleportDistT = Instance.new("TextLabel")
+		local Error = Instance.new("TextLabel")
+		local TextLabel = Instance.new("TextLabel")
+		local Drag = Instance.new("TextButton")
+ 
+		gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+		gui.Name = "Aimbot"
+		gui.ResetOnSpawn = false
+		gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ 
+		Frame.Parent = gui
+		Frame.BackgroundColor3 = Color3.new(0, 0, 0)
+		Frame.ClipsDescendants = true
+		Frame.Draggable = true
+		Frame.Position = UDim2.new(0.100000001, 0, 0.5, -179)
+		Frame.Selectable = true
+		Frame.Size = UDim2.new(0, 200, 0, 358)
+		Frame.ZIndex = 2
+ 
+		ImageLabel.Parent = Frame
+		ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+		ImageLabel.Draggable = true
+		ImageLabel.Size = UDim2.new(1, 0, 1, 0)
+		ImageLabel.Image = "http://www.roblox.com/asset/?id=4221488610"
+ 
+		AimbotTKT.Name = "AimbotTKT"
+		AimbotTKT.Parent = Frame
+		AimbotTKT.BackgroundColor3 = Color3.new(0, 0, 0)
+		AimbotTKT.BackgroundTransparency = 0.40000000596046
+		AimbotTKT.Position = UDim2.new(0.100000001, 0, 0.0700000003, 0)
+		AimbotTKT.Size = UDim2.new(0.649999976, 0, 0.0500000007, 0)
+		AimbotTKT.Font = Enum.Font.SourceSans
+		AimbotTKT.Text = "Aimbot TK"
+		AimbotTKT.TextColor3 = Color3.new(1, 1, 1)
+		AimbotTKT.TextSize = 17
+ 
+		AimbotTK.Name = "AimbotTK"
+		AimbotTK.Parent = Frame
+		AimbotTK.BackgroundColor3 = Color3.new(0, 0, 0)
+		AimbotTK.BackgroundTransparency = 0.40000000596046
+		AimbotTK.Position = UDim2.new(0.850000024, 0, 0.0700000003, 0)
+		AimbotTK.Size = UDim2.new(0.0700000003, 0, 0.0500000007, 0)
+		AimbotTK.Font = Enum.Font.SourceSans
+		AimbotTK.Text = ""
+		AimbotTK.TextColor3 = Color3.new(1, 1, 1)
+		AimbotTK.TextSize = 17
+ 
+		Reticle.Name = "Reticle"
+		Reticle.Parent = Frame
+		Reticle.BackgroundColor3 = Color3.new(0, 0, 0)
+		Reticle.BackgroundTransparency = 0.40000000596046
+		Reticle.Position = UDim2.new(0.850000024, 0, 0.140000001, 0)
+		Reticle.Size = UDim2.new(0.0700000003, 0, 0.0500000007, 0)
+		Reticle.Font = Enum.Font.SourceSans
+		Reticle.Text = "X"
+		Reticle.TextColor3 = Color3.new(1, 1, 1)
+		Reticle.TextSize = 17
+ 
+		ReticleT.Name = "ReticleT"
+		ReticleT.Parent = Frame
+		ReticleT.BackgroundColor3 = Color3.new(0, 0, 0)
+		ReticleT.BackgroundTransparency = 0.40000000596046
+		ReticleT.Position = UDim2.new(0.100000001, 0, 0.140000001, 0)
+		ReticleT.Size = UDim2.new(0.649999976, 0, 0.0500000007, 0)
+		ReticleT.Font = Enum.Font.SourceSans
+		ReticleT.Text = "Aimbot uses reticle"
+		ReticleT.TextColor3 = Color3.new(1, 1, 1)
+		ReticleT.TextSize = 17
+ 
+		Teleport.Name = "Teleport"
+		Teleport.Parent = Frame
+		Teleport.BackgroundColor3 = Color3.new(0, 0, 0)
+		Teleport.BackgroundTransparency = 0.40000000596046
+		Teleport.Position = UDim2.new(0.850000024, 0, 0.209999993, 0)
+		Teleport.Size = UDim2.new(0.0700000003, 0, 0.0500000007, 0)
+		Teleport.Font = Enum.Font.SourceSans
+		Teleport.Text = "X"
+		Teleport.TextColor3 = Color3.new(1, 1, 1)
+		Teleport.TextSize = 17
+ 
+		TeleportT.Name = "TeleportT"
+		TeleportT.Parent = Frame
+		TeleportT.BackgroundColor3 = Color3.new(0, 0, 0)
+		TeleportT.BackgroundTransparency = 0.40000000596046
+		TeleportT.Position = UDim2.new(0.100000001, 0, 0.209999993, 0)
+		TeleportT.Size = UDim2.new(0.649999976, 0, 0.0500000007, 0)
+		TeleportT.Font = Enum.Font.SourceSans
+		TeleportT.Text = "Enable teleport"
+		TeleportT.TextColor3 = Color3.new(1, 1, 1)
+		TeleportT.TextSize = 17
+ 
+		TeleportDist.Name = "TeleportDist"
+		TeleportDist.Parent = Frame
+		TeleportDist.BackgroundColor3 = Color3.new(0, 0, 0)
+		TeleportDist.BackgroundTransparency = 0.40000000596046
+		TeleportDist.Position = UDim2.new(0.850000024, 0, 0.279999993, 0)
+		TeleportDist.Size = UDim2.new(0.100000003, 0, 0.0500000007, 0)
+		TeleportDist.Font = Enum.Font.SourceSans
+		TeleportDist.Text = tostring(acceptableteleportdistance)
+		TeleportDist.TextColor3 = Color3.new(1, 1, 1)
+		TeleportDist.TextSize = 17
+ 
+		TeleportDistT.Name = "TeleportDistT"
+		TeleportDistT.Parent = Frame
+		TeleportDistT.BackgroundColor3 = Color3.new(0, 0, 0)
+		TeleportDistT.BackgroundTransparency = 0.40000000596046
+		TeleportDistT.Position = UDim2.new(0.100000001, 0, 0.279999993, 0)
+		TeleportDistT.Size = UDim2.new(0.649999976, 0, 0.0500000007, 0)
+		TeleportDistT.Font = Enum.Font.SourceSans
+		TeleportDistT.Text = "Max teleport distance"
+		TeleportDistT.TextColor3 = Color3.new(1, 1, 1)
+		TeleportDistT.TextSize = 17
+ 
+		Error.Name = "Error"
+		Error.Parent = Frame
+		Error.BackgroundColor3 = Color3.new(0, 0, 0)
+		Error.BackgroundTransparency = 0.40000000596046
+		Error.Position = UDim2.new(0.100000001, 0, 0.800000012, 0)
+		Error.Size = UDim2.new(0.800000012, 0, 0.150000006, 0)
+		Error.Font = Enum.Font.SourceSans
+		Error.Text = ""
+		Error.TextColor3 = Color3.new(0.745098, 0.207843, 0.160784)
+		Error.TextSize = 17
+		Error.TextWrapped = true
+		Error.TextXAlignment = Enum.TextXAlignment.Left
+		Error.TextYAlignment = Enum.TextYAlignment.Top
+ 
+		TextLabel.Parent = Frame
+		TextLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+		TextLabel.BackgroundTransparency = 0.40000000596046
+		TextLabel.Position = UDim2.new(0.100000001, 0, 0.649999976, 0)
+		TextLabel.Size = UDim2.new(0.800000012, 0, 0.100000001, 0)
+		TextLabel.Font = Enum.Font.SourceSans
+		TextLabel.Text = "GUI and script by genericusername1231#7218."
+		TextLabel.TextColor3 = Color3.new(1, 1, 1)
+		TextLabel.TextSize = 15
+		TextLabel.TextWrapped = true
+ 
+		Drag.Name = "Drag"
+		Drag.Parent = Frame
+		Drag.BackgroundColor3 = Color3.new(0, 0, 0)
+		Drag.BackgroundTransparency = 0.5
+		Drag.Size = UDim2.new(1, 0, 0.0500000007, 0)
+		Drag.Font = Enum.Font.SourceSans
+		Drag.Text = ""
+		Drag.TextColor3 = Color3.new(0, 0, 0)
+		Drag.TextSize = 14
+	end
+ 
+	if s then 
+		print("GUI loaded")
+	end
+end)
+ 
+function displayerror(str)
+	spawn(function() gui.Frame.Error.Text = str wait(2.5) gui.Frame.Error.Text = "" end)
+end
+ 
+ 
+function getnearestplayer()
+	if player.Character then
+		local lowest = math.huge
+		local h = nil
+		for i,v in pairs(game.Players:GetPlayers()) do
+			if v and v ~= player and (v.TeamColor ~= player.TeamColor or aimbotTK) and v.Character and v.Character:FindFirstChild("Head") and v.Character:FindFirstChild("Humanoid") and v.Character.Humanoid.Health > 0 and player.Character and player.Character:FindFirstChild("Head") then
+				local distance = (player.Character.Head.Position - v.Character.Head.Position).magnitude
+				if distance < lowest then
+					lowest = distance
+					h = v
+				end
+			end
+		end
+		return h 
+	end
+end 
+ 
+function getnearestplayertoreticle()
+	if player.Character then
+		local lowest = math.huge
+		local h = nil
+		for i,v in pairs(game.Players:GetPlayers()) do
+			if v and v ~= player and (v.TeamColor ~= player.TeamColor or aimbotTK) and v.Character and v.Character:FindFirstChild("Head") and v.Character:FindFirstChild("Humanoid") and v.Character.Humanoid.Health > 0 then
+				local offset = game.Workspace.CurrentCamera.CFrame.LookVector - lookat(game.Workspace.CurrentCamera.CFrame.Position, v.Character.Head.Position).LookVector
+				distance = math.sqrt((offset.x * offset.x) + (offset.z * offset.z))
+				if distance < lowest then
+					lowest = distance
+					h = v
+				end
+			end
+		end
+		return h 
+	end
+end 
+ 
+function lookat(target, eye)
+	local forwardVector = (eye - target).Unit
+	local upVector = Vector3.new(0, 1, 0)
+	local rightVector = forwardVector:Cross(upVector)
+	local upVector2 = rightVector:Cross(forwardVector)
+ 
+	return CFrame.fromMatrix(eye, rightVector, upVector2)
+end
+ 
+function teleportbehindnearest()
+	local h = getnearestplayer()
+	if player and player.Character and h and h.Character and h.Character:FindFirstChild("Head") then
+		if (player.Character.PrimaryPart.Position - h.Character.PrimaryPart.Position).magnitude < acceptableteleportdistance then
+			player.Character:SetPrimaryPartCFrame(h.Character.Head.CFrame + (h.Character.Head.CFrame.LookVector * -3))
+			game.Workspace.CurrentCamera.CFrame = lookat(game.Workspace.CurrentCamera.CFrame.Position, h.Character.Head.Position)
+			if currenttool then 
+				currenttool:Activate()
+			end
+		else
+			displayerror("No targets found. Try enabling AimbotTK")
+		end
+	end
+end
+ 
+ 
+ 
+function aimbot()
+	--Comment out the if statement if this doesn't work
+	if snaptoreticle then 
+		h = getnearestplayertoreticle()
+	else
+		h = getnearestplayer()
+	end
+ 
+	if h then 
+		game.Workspace.CurrentCamera.CFrame = lookat(game.Workspace.CurrentCamera.CFrame.Position, h.Character.Head.Position)
+	else
+		displayerror("No targets found. Try enabling AimbotTK")
+	end
+end
+ 
+ 
+function translate(n) 
+	if player.Character and player.Character.PrimaryPart then
+		player.Character:SetPrimaryPartCFrame(player.Character.PrimaryPart.CFrame + (game.Workspace.CurrentCamera.CFrame.LookVector * n))
+	end
+end
+ 
+ 
+connections[1] = uis.InputBegan:Connect(function(a)
+	if a.KeyCode == Enum.KeyCode.G and teleportenabled then
+		translate(5)
+	elseif a.KeyCode == Enum.KeyCode.H and teleportenabled then
+		translate(10)
+	end
+ 
+	if a.KeyCode == Enum.KeyCode.Semicolon then 
+		print("Connections cleared")
+		clr = true
+		for i,v in pairs(connections) do 
+			v:Disconnect()
+		end
+		if player.PlayerGui:FindFirstChild("Aimbot") then
+			player.PlayerGui.Aimbot:Destroy()
+		end
+	end
+end)
+ 
+connections[2] = player.CharacterAdded:Connect(function(char)
+	connections[3] = char.ChildAdded:Connect(function(c)
+		if c:IsA("Tool") then 
+			print("Tool found")
+			currenttool = c 
+		end
+	end)
+	connections[4] = char.ChildRemoved:Connect(function(c)
+		if c == currenttool then 
+			currenttool = nil
+		end
+	end)
+end)
+ 
+connections[5] = gui.Frame.Drag.MouseButton1Down:Connect(function()
+	buttondown = true
+	while true do
+		if (buttondown == false) or (clr == true) then
+			return
+		end
+		rs.RenderStepped:Wait()
+		gui.Frame.Position = UDim2.new(0, mouse.X - 125, 0, mouse.Y - 10)
+	end
+end)
+ 
+connections[6] = gui.Frame.Drag.MouseButton1Up:Connect(function()
+	buttondown = false
+end)
+ 
+connections[7] = gui.Frame.AimbotTK.MouseButton1Click:Connect(function()
+	if aimbotTK == true then
+		aimbotTK = false
+		gui.Frame.AimbotTK.Text = ""
+	else
+		aimbotTK = true
+		gui.Frame.AimbotTK.Text = "X"
+	end
+end)
+ 
+connections[8] = gui.Frame.Reticle.MouseButton1Click:Connect(function()
+	if snaptoreticle == true then
+		snaptoreticle = false
+		gui.Frame.Reticle.Text = ""
+	else
+		snaptoreticle = true
+		gui.Frame.Reticle.Text = "X"
+	end
+end)
+ 
+connections[9] = gui.Frame.Teleport.MouseButton1Down:Connect(function()
+	if teleportenabled == true then
+		teleportenabled = false
+		gui.Frame.Teleport.Text = ""
+	else
+		teleportenabled = true
+		gui.Frame.Teleport.Text = "X"
+	end
+end)
+ 
+connections[10] = gui.Frame.TeleportDist.Changed:Connect(function()
+	if tonumber(gui.Frame.TeleportDist.Text) and tonumber(gui.Frame.TeleportDist.Text) > 0 then
+		acceptableteleportdistance = tonumber(gui.Frame.TeleportDist.Text)
+		print(acceptableteleportdistance)
+	elseif gui.Frame.TeleportDist.Text ~= "" then
+		displayerror("Must be a valid, positive integer.")
+	end
+end)
+ 
+while true do
+	if uis:IsKeyDown(Enum.KeyCode.F) then 
+		aimbot()
+	end
+	if uis:IsKeyDown(Enum.KeyCode.Q) and teleportenabled then 
+		translate(2.5)
+	end
+	if uis:IsKeyDown(Enum.KeyCode.T) and teleportenabled then
+		teleportbehindnearest()
+	end
+	if clr == true then return end
+	wait(.05)
+end
+
+---------------------------------------------------------------------------------------------------------
+
+getgenv().Circle = {
+   ["Size"] = 3,
+   ["Enabled"] = true,
+   ["Random FTI"] = false,
+   ["Whitelisted Limbs"] = {"Right Arm","Torso","HumanoidRootPart"}
+}
+
+getgenv().Configuration = {
+   ["Active"] = true,
+   ["Increase Size"] = 0.1,
+   ["Decrease Size"] = 0.1,
+   ["Notifications"] = true,
+   ["Auto Clicker"] = false,
+   ["Transparency Check"] = false,
+   ["Team Check"] = false,
+   ["Fake Handle FTI"] = false -- if true, will only trigger if a fake handle is present (use for advanced antis)
+}
+
+getgenv().Keybinds = {
+   ["Toggle Reach"] = "R",
+   ["Toggle AC"] = "E",
+   ["Increase Reach"] = "J",
+   ["Decrease Reach"] = "K",
+   ["Toggle Script"] = "Z",
+   ["Notifications Toggle"] = "N",
+   ["Fake Handle FTI Toggle"] = "F"
+}
+
+local StarterGui = game:GetService("StarterGui")
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+local function SendNotification(Ti,Te)
+   StarterGui:SetCore('SendNotification', {Title = tostring(Ti), Text = tostring(Te)})
+end
+
+local Mouse = LocalPlayer:GetMouse()
+
+Mouse.KeyDown:Connect(function(key)
+   if key == string.lower(getgenv().Keybinds["Toggle Reach"]) then
+       if getgenv().Configuration["Active"] == false then return end
+       getgenv().Circle["Enabled"] = not getgenv().Circle["Enabled"]
+       if getgenv().Configuration["Notifications"] == true then
+           SendNotification("Xen-Zone","Reach = "..tostring(getgenv().Circle["Enabled"]))
+       end
+   elseif key == string.lower(getgenv().Keybinds["Toggle AC"]) then
+       if getgenv().Configuration["Active"] == false then return end
+       getgenv().Configuration["Auto Clicker"] = not getgenv().Configuration["Auto Clicker"]
+       if getgenv().Configuration["Notifications"] == true then
+           SendNotification("Xen-Zone","AutoClicker = "..tostring(getgenv().Configuration["Auto Clicker"]))
+       end
+   elseif key == string.lower(getgenv().Keybinds["Fake Handle FTI Toggle"]) then
+       if getgenv().Configuration["Active"] == false then return end
+       getgenv().Configuration["Fake Handle FTI"] = not getgenv().Configuration["Fake Handle FTI"]
+       if getgenv().Configuration["Notifications"] == true then
+           SendNotification("Xen-Zone","Fake Handle FTI = "..tostring(getgenv().Configuration["Fake Handle FTI"]))
+       end
+   elseif key == string.lower(getgenv().Keybinds["Increase Reach"]) then
+       if getgenv().Configuration["Active"] == false then return end
+       getgenv().Circle["Size"] = getgenv().Circle["Size"] + getgenv().Configuration["Increase Size"]
+       if getgenv().Configuration["Notifications"] == true then
+           SendNotification("Xen-Zone","Size = "..getgenv().Circle["Size"])
+       end
+   elseif key == string.lower(getgenv().Keybinds["Decrease Reach"]) then
+       if getgenv().Configuration["Active"] == false then return end
+       getgenv().Circle["Size"] = getgenv().Circle["Size"] - getgenv().Configuration["Decrease Size"]
+       if getgenv().Configuration["Notifications"] == true then
+           SendNotification("Xen-Zone","Size = "..getgenv().Circle["Size"])
+       end
+   elseif key == string.lower(getgenv().Keybinds["Notifications Toggle"]) then
+       getgenv().Configuration["Notifications"] = not getgenv().Configuration["Notifications"]
+       SendNotification("Xen-Zone","Notifications = "..tostring(getgenv().Configuration["Notifications"]))
+   elseif key == string.lower(getgenv().Keybinds["Toggle Script"]) then
+       getgenv().Configuration["Active"] = not getgenv().Configuration["Active"]
+       if getgenv().Configuration["Notifications"] == true then
+           SendNotification("Xen-Zone","Script = "..tostring(getgenv().Configuration["Active"]))
+       end
+   end
+end)
+
+hookfunction(gcinfo or collectgarbage, function(...)
+   if getgenv().Configuration["Active"] == false then return end
+   return math.random(200,400)
+end)
+
+local HPHook;
+
+HPHook = hookmetamethod(game, "__index", function(H, HP)
+   if not checkcaller() then
+   end
+   return HPHook(H, HP)
+end)
+
+local HitParts = {}
+local t = tick()
+
+local FTI = function(hit,handle)
+   local Humanoid = hit.Parent:FindFirstChild("Humanoid")
+   if Humanoid and Humanoid.Health ~= 0 and hit.Parent.Name ~= LocalPlayer.Character.Name then
+       if getgenv().Configuration["Transparency Check"] == true then if hit.Transparency > 0.8 then return end end
+       local Region = Region3.new(handle.Position + Vector3.new(-1,-1,-1), handle.Position + Vector3.new(1,1,1))
+       local InRegion = game:GetService("Workspace"):FindPartsInRegion3(Region)
+       if getgenv().Configuration["Fake Handle FTI"] then
+           for _,v in pairs(InRegion) do
+               if v:IsA("Part") and v:FindFirstChildOfClass("TouchTransmitter") and v.Name ~= "Handle" then
+                   if getgenv().Circle["Random FTI"] == true then
+                       for i,parts in pairs(hit.Parent:GetChildren()) do
+                           if parts:IsA("Part") then
+                               if table.find(getgenv().Circle["Whitelisted Limbs"],parts.Name) then
+                                   if not table.find(HitParts,parts.Name) then
+                                       if #HitParts >= 6 then table.clear(HitParts) end
+                                       table.insert(HitParts,parts.Name)
+                                       if math.abs(tick() - t) < 0.05 then return end
+                                       t = tick()
+                                       firetouchinterest(parts,handle,0)
+                                       firetouchinterest(parts,handle,1)
+                                       firetouchinterest(parts,v,0)
+                                       firetouchinterest(parts,v,1)
+                                   end
+                               end
+                           end
+                       end
+                   else
+                       for i,parts in pairs(hit.Parent:GetChildren()) do
+                           if parts:IsA("Part") then
+                               if table.find(getgenv().Circle["Whitelisted Limbs"],parts.Name) then
+                                   firetouchinterest(parts,handle,0)
+                                   firetouchinterest(parts,handle,1)
+                                   firetouchinterest(parts,v,0)
+                                   firetouchinterest(parts,v,1)
+                               end
+                           end
+                       end
+                   end
+               end
+           end
+       else
+           for _,v in pairs(InRegion) do
+               if v:IsA("Part") and v:FindFirstChildOfClass("TouchTransmitter") then
+                   if getgenv().Circle["Random FTI"] == true then
+                       for i,parts in pairs(hit.Parent:GetChildren()) do
+                           if parts:IsA("Part") then
+                               if table.find(getgenv().Circle["Whitelisted Limbs"],parts.Name) then
+                                   if not table.find(HitParts,parts.Name) then
+                                       if #HitParts >= 6 then table.clear(HitParts) end
+                                       table.insert(HitParts,parts.Name)
+                                       if math.abs(tick() - t) < 0.05 then return end
+                                       t = tick()
+                                       firetouchinterest(parts,v,0)
+                                       firetouchinterest(parts,v,1)
+                                   end
+                               end
+                           end
+                       end
+                   else
+                       for i,parts in pairs(hit.Parent:GetChildren()) do
+                           if parts:IsA("Part") then
+                               if table.find(getgenv().Circle["Whitelisted Limbs"],parts.Name) then
+                                   firetouchinterest(parts,v,0)
+                                   firetouchinterest(parts,v,1)
+                               end
+                           end
+                       end
+                   end
+               end
+           end
+       end
+   end
+end
+
+local IsTeam = function(Player)
+   if Player.Team == LocalPlayer.Team then
+       return true
+   else
+       return false
+   end
+end
+
+game:GetService("RunService").RenderStepped:Connect(function()
+   if getgenv().Configuration["Active"] == false then return end
+   if getgenv().Circle["Enabled"] == false then return end
+   local Tool = LocalPlayer.Character and LocalPlayer.Character:FindFirstChildOfClass("Tool")
+   if Tool then
+       if getgenv().Configuration["Auto Clicker"] and LocalPlayer.Character.Humanoid.Health ~= 0 then Tool:Activate() Tool:Activate() end
+       local Handle = Tool:FindFirstChild("Handle")
+       if Handle then
+           local Size = getgenv().Circle["Size"]
+           if getgenv().Configuration["Team Check"] == true then
+               for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+                   if IsTeam(v) == false then
+                       local HRP = v.Character and v.Character:FindFirstChild("HumanoidRootPart")
+                       if HRP then
+                           local Distance = (HRP.Position - Handle.Position).Magnitude
+                           if Distance <= Size then
+                               FTI(HRP,Handle)
+                           end
+                       end
+                   end
+               end
+           else
+               for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+                   local HRP = v.Character and v.Character:FindFirstChild("HumanoidRootPart")
+                   if HRP then
+                       local Distance = (HRP.Position - Handle.Position).Magnitude
+                       if Distance <= Size then
+                           FTI(HRP,Handle)
+                       end
+                   end
+               end
+           end
+       end
+   end
+end)
