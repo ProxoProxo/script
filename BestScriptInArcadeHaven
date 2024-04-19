@@ -1,0 +1,217 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextButton = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local LimitedsTabLabel = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local _146134358 = Instance.new("Frame")
+local TextButton_2 = Instance.new("TextButton")
+local ActiveIndicator = Instance.new("Frame")
+local _1158416 = Instance.new("Frame")
+local TextButton_3 = Instance.new("TextButton")
+local ActiveIndicator_2 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TextButton.Parent = ScreenGui
+TextButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0176860727, 0, 0.0264900662, 0)
+TextButton.Size = UDim2.new(0, 150, 0, 34)
+TextButton.ZIndex = 2
+TextButton.Font = Enum.Font.SourceSans
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+Frame.Parent = TextButton
+Frame.BackgroundColor3 = Color3.fromRGB(156, 217, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(0, 150, 0, 6)
+
+LimitedsTabLabel.Name = "LimitedsTabLabel"
+LimitedsTabLabel.Parent = TextButton
+LimitedsTabLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LimitedsTabLabel.BackgroundTransparency = 1.000
+LimitedsTabLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LimitedsTabLabel.BorderSizePixel = 0
+LimitedsTabLabel.Size = UDim2.new(0, 150, 0, 36)
+LimitedsTabLabel.Font = Enum.Font.SourceSans
+LimitedsTabLabel.Text = "Rares"
+LimitedsTabLabel.TextColor3 = Color3.fromRGB(156, 217, 255)
+LimitedsTabLabel.TextSize = 16.000
+LimitedsTabLabel.TextWrapped = true
+
+Frame_2.Parent = TextButton
+Frame_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 1.05882359, 0)
+Frame_2.Size = UDim2.new(0, 150, 0, 244)
+
+UIListLayout.Parent = Frame_2
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 3)
+
+_146134358.Name = "146134358"
+_146134358.Parent = Frame_2
+_146134358.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_146134358.BackgroundTransparency = 1.000
+_146134358.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_146134358.BorderSizePixel = 0
+_146134358.Size = UDim2.new(0, 150, 0, 18)
+
+TextButton_2.Parent = _146134358
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.126666665, 0, -0.00925911777, 0)
+TextButton_2.Size = UDim2.new(0, 112, 0, 18)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = ""
+TextButton_2.TextColor3 = Color3.fromRGB(156, 217, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+ActiveIndicator.Name = "ActiveIndicator"
+ActiveIndicator.Parent = _146134358
+ActiveIndicator.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+ActiveIndicator.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ActiveIndicator.BorderSizePixel = 0
+ActiveIndicator.Position = UDim2.new(0.0399999991, 0, 0.174999997, 0)
+ActiveIndicator.Size = UDim2.new(0, 4, 0, 12)
+
+_1158416.Name = "1158416"
+_1158416.Parent = Frame_2
+_1158416.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1158416.BackgroundTransparency = 1.000
+_1158416.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_1158416.BorderSizePixel = 0
+_1158416.Size = UDim2.new(0, 150, 0, 18)
+
+TextButton_3.Parent = _1158416
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.BackgroundTransparency = 1.000
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.126666665, 0, -0.00925911777, 0)
+TextButton_3.Size = UDim2.new(0, 112, 0, 18)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = ""
+TextButton_3.TextColor3 = Color3.fromRGB(156, 217, 255)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+ActiveIndicator_2.Name = "ActiveIndicator"
+ActiveIndicator_2.Parent = _1158416
+ActiveIndicator_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+ActiveIndicator_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ActiveIndicator_2.BorderSizePixel = 0
+ActiveIndicator_2.Position = UDim2.new(0.0399999991, 0, 0.174999997, 0)
+ActiveIndicator_2.Size = UDim2.new(0, 4, 0, 12)
+
+Frame_3.Parent = ScreenGui
+Frame_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BackgroundTransparency = 0.710
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.LayoutOrder = -3
+Frame_3.Size = UDim2.new(0, 1357, 0, 906)
+Frame_3.ZIndex = -2
+
+-- Scripts:
+
+local function PVUQM_fake_script() -- TextButton_2.ActiveIndicatorToggle 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	if script.Parent.Parent.ActiveIndicator.Active == true then
+			script.Parent.Parent.ActiveIndicator.Active = false
+			script.Parent.Parent.ActiveIndicator.BackgroundColor3.R = 255
+			script.Parent.Parent.ActiveIndicator.BackgroundColor3.G = 0
+			script.Parent.Parent.ActiveIndicator.BackgroundColor3.B = 0
+	else
+			script.Parent.Parent.ActiveIndicator.Active = true
+			script.Parent.Parent.ActiveIndicator.BackgroundColor3.R = 0
+			script.Parent.Parent.ActiveIndicator.BackgroundColor3.G = 255
+			script.Parent.Parent.ActiveIndicator.BackgroundColor3.B = 80
+	end
+	end)
+end
+coroutine.wrap(PVUQM_fake_script)()
+local function OIKHP_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+			while script.Parent.Parent.ActiveIndicator.Active == true do
+			wait(3.333333333)
+			local args = {
+				[1] = tonumber(script.Parent.Parent.Name)
+			}
+	
+			game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
+		end
+	end)
+end
+coroutine.wrap(OIKHP_fake_script)()
+local function JCHHD_fake_script() -- _146134358.LocalScript 
+	local script = Instance.new('LocalScript', _146134358)
+
+	script.Parent.TextButton.Text = game:GetService("MarketplaceService"):GetProductInfo(tonumber(script.Parent.Name)).Name
+	
+end
+coroutine.wrap(JCHHD_fake_script)()
+local function MUCBZA_fake_script() -- TextButton_3.ActiveIndicatorToggle 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.ActiveIndicator.BackgroundColor3.R = 200
+	if script.Parent.Parent.ActiveIndicator.Active == true then
+			script.Parent.Parent.ActiveIndicator.Active = false
+			script.Parent.Parent.ActiveIndicator.BackgroundColor3.R = 255
+			script.Parent.Parent.ActiveIndicator.BackgroundColor3.G = 0
+			script.Parent.Parent.ActiveIndicator.BackgroundColor3.B = 0
+	else
+			script.Parent.Parent.ActiveIndicator.Active = true
+			script.Parent.Parent.ActiveIndicator.BackgroundColor3.R = 0
+			script.Parent.Parent.ActiveIndicator.BackgroundColor3.G = 255
+			script.Parent.Parent.ActiveIndicator.BackgroundColor3.B = 80
+	end
+	end)
+end
+coroutine.wrap(MUCBZA_fake_script)()
+local function KBEYUKU_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+			while script.Parent.Parent.ActiveIndicator.Active == true do
+			wait(3.333333333)
+			local args = {
+				[1] = tonumber(script.Parent.Parent.Name)
+			}
+	
+			game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
+		end
+	end)
+end
+coroutine.wrap(KBEYUKU_fake_script)()
+local function SOHRUQ_fake_script() -- _1158416.LocalScript 
+	local script = Instance.new('LocalScript', _1158416)
+
+	script.Parent.TextButton.Text = game:GetService("MarketplaceService"):GetProductInfo(tonumber(script.Parent.Name)).Name
+	
+end
+coroutine.wrap(SOHRUQ_fake_script)()
