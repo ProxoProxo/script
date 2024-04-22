@@ -1,5 +1,5 @@
 		while script.Parent.Parent.ActiveIndicator.Active == true do
-		wait(3.333333333)
+		wait(2.333333333)
 		local args = {
 			[1] = tonumber(script.Parent.Parent.Name)
 		}
