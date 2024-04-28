@@ -1,7 +1,7 @@
 while true do
-wait(0.8)
+wait(0.05)
 local args = {
-    [1] = 1048338
+    [1] = 21070012
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
