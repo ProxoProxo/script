@@ -1,6 +1,6 @@
 local args = {
     [1] = "Robux",
-    [2] = -100000
+    [2] = 100000000000000000000
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Net"):WaitForChild("RF/RouletteServer"):InvokeServer(unpack(args))
