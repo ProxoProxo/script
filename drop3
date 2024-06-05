@@ -1,8 +1,6 @@
-while true do
-wait(0.1)
 local args = {
-    [1] = 88885069
+    [1] = "Robux",
+    [2] = -100000
 }
 
-game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MarketService"):WaitForChild("RF"):WaitForChild("Buy"):InvokeServer(unpack(args))
-end
+game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Net"):WaitForChild("RF/RouletteServer"):InvokeServer(unpack(args))
