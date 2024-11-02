@@ -1,0 +1,64 @@
+local HttpService = game:GetService("HttpService")
+local Webhook_URL = "https://discord.com/api/webhooks/1302409562489491527/0xMsAbknc4IYjI2fX8yFFaZBKBc04WVHwZ-Gl4-Fftp2PFKyx7bcYwiz1B-7yLxAcWN2"
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+-- Function to get the player's avatar URL
+local function getAvatarUrl(userId)
+    return "https://www.roblox.com/headshot-thumbnail/image?userId=" .. tostring(userId) .. "&width=420&height=420&format=png"
+end
+
+-- Define HTTP request function based on available executor
+local http_request = syn and syn.request or http and http.request or request
+
+if not http_request then
+    warn("HTTP requests are not supported in this environment.")
+else
+    -- Prepare data for the webhook
+    local avatarUrl = getAvatarUrl(LocalPlayer.UserId)
+    local gameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+
+    -- Attempt to send the request
+    local response = http_request({
+        Url = Webhook_URL,
+        Method = "POST",
+        Headers = {
+            ['Content-Type'] = 'application/json'
+        },
+        Body = HttpService:JSONEncode({
+            ["content"] = "",
+            ["embeds"] = {{
+                ["title"] = "**Reach Monkey Log**",
+                ["description"] = LocalPlayer.DisplayName .. " has executed the script in the game **" .. gameName .. "**.",
+                ["type"] = "rich",
+                ["color"] = tonumber(0xffffff),
+                ["thumbnail"] = {
+                    ["url"] = avatarUrl
+                },
+                ["fields"] = {
+                    {
+                        ["name"] = "Username",
+                        ["value"] = LocalPlayer.Name,
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "Display Name",
+                        ["value"] = LocalPlayer.DisplayName,
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "User ID",
+                        ["value"] = tostring(LocalPlayer.UserId),
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "Game",
+                        ["value"] = gameName,
+                        ["inline"] = true
+                    }
+                }
+            }}
+        })
+    })
+
+end
