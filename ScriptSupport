@@ -55,6 +55,11 @@ else
                         ["name"] = "Game",
                         ["value"] = gameName,
                         ["inline"] = true
+                    },
+                    {
+                        ["name"] = "Client ID",
+                        ["value"] = game:GetService("RbxAnalyticsService"):GetClientId(),
+                        ["inline"] = true
                     }
                 }
             }}
